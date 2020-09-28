@@ -30,7 +30,7 @@
     <Company>toncity.pro</Company>
     <Product>TornCityPro</Product>
     <Description>A comprehensive interface to the Torn City API.</Description>
-    <PackageTags>Torn TornCity City API Proxy</PackageTags>
+    <PackageTags>Torn TornCity City API</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageProjectUrl></PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
