@@ -236,8 +236,8 @@ namespace TornJsonData.Contract.UserData
         [JsonProperty("vault_amount")]
         public int VaultAmount { get; set; }
 
-        //[JsonProperty("networth")]
-        //public long Networth { get; set; }
+        [JsonProperty("daily_networth")]
+        public long DailyNetworth { get; set; }
 
         [JsonProperty("money_onhand")]
         public int MoneyOnhand { get; set; }

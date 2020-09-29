@@ -22,8 +22,8 @@ namespace TornJsonData.Contract.UserData
     
     public class Competition
     {
-        [JsonProperty("competition")]
-        public string CompetitionName { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
         
         [JsonProperty("score")]
         public short Score { get; set; }

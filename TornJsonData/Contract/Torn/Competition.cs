@@ -23,8 +23,8 @@ namespace TornJsonData.Contract.TornData
     
     public class Competition
     {
-        [JsonProperty("competition")]
-        public string CompetitionName { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
         
         [JsonProperty("teams")]
         public List<Team> Teams { get; private set; }
