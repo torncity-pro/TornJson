@@ -18,7 +18,7 @@
 
 using Newtonsoft.Json;
 
-namespace TornJsonData.Contract.UserData
+namespace TornJsonData.Contract.User
 {
     /// <summary>
     /// Represents a set of working stats
