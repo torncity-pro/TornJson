@@ -16,9 +16,10 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
+using TornJsonData.CommonData;
+
 namespace TornJsonData.Exceptions
 {
-    using Contract.Common;
     using System;
     using System.Runtime.Serialization;
 

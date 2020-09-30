@@ -16,9 +16,10 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
+using TornJsonData.CommonData;
+
 namespace TornJsonData
 {
-    using Contract.Common;
     using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;

@@ -46,4 +46,14 @@
 	<None Include="..\LICENSE.txt" Pack="true" PackagePath="" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Contract\CommonData" />
+    <Folder Include="Contract\CompanyData" />
+    <Folder Include="Contract\FactionData" />
+    <Folder Include="Contract\ItemData" />
+    <Folder Include="Contract\PropertyData" />
+    <Folder Include="Contract\TornData" />
+    <Folder Include="Contract\UserData" />
+  </ItemGroup>
+
 </Project>
