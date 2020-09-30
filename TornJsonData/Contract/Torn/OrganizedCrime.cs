@@ -32,7 +32,7 @@ namespace TornJsonData.Contract.Torn
         [JsonProperty("time")]
         public short TimeInHours { get; set; }
 
-        public System.TimeSpan Time { get { return System.TimeSpan.FromHours(TimeInHours); } }
+        public System.TimeSpan Time => System.TimeSpan.FromHours(TimeInHours);
 
         [JsonProperty("min_cash")]
         public int MinCash { get; set; }

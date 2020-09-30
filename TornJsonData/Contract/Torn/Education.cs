@@ -54,7 +54,7 @@ namespace TornJsonData.Contract.Torn
         [JsonProperty("duration")]
         public int DurationInSeconds { get; set; }
 
-        public System.TimeSpan Duration { get { return System.TimeSpan.FromSeconds(DurationInSeconds); } }
+        public System.TimeSpan Duration => System.TimeSpan.FromSeconds(DurationInSeconds);
 
         [JsonProperty("results")]
         public Results Results { get; set; }

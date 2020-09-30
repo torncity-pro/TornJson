@@ -40,6 +40,6 @@ namespace TornJsonData.Contract.Common
         /// <summary>
         /// The accessor for the fieldName
         /// </summary>
-        public string FieldName { get { return fieldName; } }
+        public string FieldName => fieldName;
     }
 }

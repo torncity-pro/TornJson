@@ -74,19 +74,19 @@ namespace TornJsonData.Contract.User
         public int AttacksStealthed { get; set; }
 
         [JsonProperty("attackhits")]
-        public int attackhits { get; set; }
+        public int AttackHits { get; set; }
 
         [JsonProperty("attackmisses")]
-        public int attackmisses { get; set; }
+        public int AttackMisses { get; set; }
 
         [JsonProperty("attackdamage")]
-        public int attackdamage { get; set; }
+        public int AttackDamage { get; set; }
 
         [JsonProperty("attackcriticalhits")]
-        public int attackcriticalhits { get; set; }
+        public int AttackCriticalHits { get; set; }
 
         [JsonProperty("respectforfaction")]
-        public int respectforfaction { get; set; }
+        public int RespectForFaction { get; set; }
 
         [JsonProperty("onehitkills")]
         public int OneHitKills { get; set; }
@@ -107,10 +107,10 @@ namespace TornJsonData.Contract.User
         public int RoundsFired { get; set; }
 
         [JsonProperty("yourunaway")]
-        public int yourunaway { get; set; }
+        public int YouRunAway { get; set; }
 
         [JsonProperty("theyrunaway")]
-        public int theyrunaway { get; set; }
+        public int TheyRunAway { get; set; }
 
         [JsonProperty("highestbeaten")]
         public int HighestLevelBeaten { get; set; }
@@ -149,249 +149,249 @@ namespace TornJsonData.Contract.User
         public int MedicalItemsUsed { get; set; }
 
         [JsonProperty("trainsreceived")]
-        public int trainsreceived { get; set; }
+        public int TrainsReceived { get; set; }
 
         [JsonProperty("totalbountyspent")]
-        public int totalbountyspent { get; set; }
+        public int TotalBountySpent { get; set; }
 
         [JsonProperty("meritsbought")]
-        public int meritsbought { get; set; }
+        public int MeritsBought { get; set; }
 
         [JsonProperty("logins")]
-        public int logins { get; set; }
+        public int Logins { get; set; }
 
         [JsonProperty("mailssent")]
-        public int mailssent { get; set; }
+        public int MailsSent { get; set; }
 
         [JsonProperty("friendmailssent")]
-        public int friendmailssent { get; set; }
+        public int FriendMailsSent { get; set; }
 
         [JsonProperty("factionmailssent")]
-        public int factionmailssent { get; set; }
+        public int FactionMailsSent { get; set; }
 
         [JsonProperty("companymailssent")]
-        public int companymailssent { get; set; }
+        public int CompanyMailsSent { get; set; }
 
         [JsonProperty("spousemailssent")]
-        public int spousemailssent { get; set; }
+        public int SpouseMailsSent { get; set; }
 
         [JsonProperty("largestmug")]
-        public int largestmug { get; set; }
+        public long LargestMug { get; set; }
 
         [JsonProperty("rifhits")]
-        public int rifhits { get; set; }
+        public int RifleHits { get; set; }
 
         [JsonProperty("piehits")]
-        public int piehits { get; set; }
+        public int PiercingHits { get; set; }
 
         [JsonProperty("slahits")]
-        public int slahits { get; set; }
+        public int SlashingHits { get; set; }
 
         [JsonProperty("mextravel")]
-        public int mextravel { get; set; }
+        public int TimesTraveledMexico { get; set; }
 
         [JsonProperty("soutravel")]
-        public int soutravel { get; set; }
+        public int TimesTraveledToSouthAfrica { get; set; }
 
         [JsonProperty("chitravel")]
-        public int chitravel { get; set; }
+        public int TimesTraveledToChina { get; set; }
 
         [JsonProperty("cantravel")]
-        public int cantravel { get; set; }
+        public int TimesTraveledToCanada { get; set; }
 
         [JsonProperty("dumpfinds")]
-        public int dumpfinds { get; set; }
+        public int DumpFinds { get; set; }
 
         [JsonProperty("dumpsearches")]
-        public int dumpsearches { get; set; }
+        public int DumpSearches { get; set; }
 
         [JsonProperty("itemsdumped")]
-        public int itemsdumped { get; set; }
+        public int ItemsDumped { get; set; }
 
         [JsonProperty("daysbeendonator")]
-        public int daysbeendonator { get; set; }
+        public int DaysBeenDonator { get; set; }
 
         [JsonProperty("jailed")]
-        public int jailed { get; set; }
+        public int Jailed { get; set; }
 
         [JsonProperty("hospital")]
-        public int hospital { get; set; }
+        public int Hospital { get; set; }
 
         [JsonProperty("bazaarcustomers")]
-        public int bazaarcustomers { get; set; }
+        public int BazaarCustomers { get; set; }
 
         [JsonProperty("bazaarsales")]
-        public int bazaarsales { get; set; }
+        public int BazaarSales { get; set; }
 
         [JsonProperty("bazaarprofit")]
-        public int bazaarprofit { get; set; }
+        public int BazaarProfit { get; set; }
 
         [JsonProperty("revives")]
-        public int revives { get; set; }
+        public int Revives { get; set; }
 
         [JsonProperty("grehits")]
-        public int grehits { get; set; }
+        public int GrenadeHits { get; set; }
 
         [JsonProperty("caytravel")]
-        public int caytravel { get; set; }
+        public int TimesTraveledToCaymans { get; set; }
 
         [JsonProperty("smghits")]
-        public int smghits { get; set; }
+        public int SubMachineGunHits { get; set; }
 
         [JsonProperty("networth")]
-        public long networth { get; set; }
+        public long Networth { get; set; }
 
         [JsonProperty("auctionswon")]
-        public int auctionswon { get; set; }
+        public int AuctionsWon { get; set; }
 
         [JsonProperty("missioncreditsearned")]
-        public int missioncreditsearned { get; set; }
+        public int MissionCreditsEarned { get; set; }
 
         [JsonProperty("contractscompleted")]
-        public int contractscompleted { get; set; }
+        public int ContractsCmpleted { get; set; }
 
         [JsonProperty("dukecontractscompleted")]
-        public int dukecontractscompleted { get; set; }
+        public int DukeContractsCompleted { get; set; }
 
         [JsonProperty("argtravel")]
-        public int argtravel { get; set; }
+        public int TimesTraveledToArgentina { get; set; }
 
         [JsonProperty("japtravel")]
-        public int japtravel { get; set; }
+        public int TimesTraveledToJapan { get; set; }
 
         [JsonProperty("missionscompleted")]
-        public int missionscompleted { get; set; }
+        public int MissionsCompleted { get; set; }
 
         [JsonProperty("hawtravel")]
-        public int hawtravel { get; set; }
+        public int TimesTraveledToHawaii { get; set; }
 
         [JsonProperty("bloodwithdrawn")]
-        public int bloodwithdrawn { get; set; }
+        public int BloodWithdrawn { get; set; }
 
         [JsonProperty("dubtravel")]
-        public int dubtravel { get; set; }
+        public int TimesTraveledToDubai { get; set; }
 
         [JsonProperty("classifiedadsplaced")]
-        public int classifiedadsplaced { get; set; }
+        public int ClassifiedAdsPlaced { get; set; }
 
         [JsonProperty("axehits")]
-        public int axehits { get; set; }
+        public int AxeHits { get; set; }
 
         [JsonProperty("weaponsbought")]
-        public int weaponsbought { get; set; }
+        public int WeaponsBought { get; set; }
 
         [JsonProperty("shohits")]
-        public int shohits { get; set; }
+        public int ShotgunHits { get; set; }
 
         [JsonProperty("drugsused")]
-        public int drugsused { get; set; }
+        public int DrugsUsed { get; set; }
 
         [JsonProperty("cantaken")]
-        public int cantaken { get; set; }
+        public int CannabisTaken { get; set; }
 
         [JsonProperty("exttaken")]
-        public int exttaken { get; set; }
+        public int EcstasyTaken { get; set; }
 
         [JsonProperty("opitaken")]
-        public int opitaken { get; set; }
+        public int OpiumTaken { get; set; }
 
         [JsonProperty("consumablesused")]
-        public int consumablesused { get; set; }
+        public int ConsumablesUsed { get; set; }
 
         [JsonProperty("candyused")]
-        public int candyused { get; set; }
+        public int CandyUsed { get; set; }
 
         [JsonProperty("alcoholused")]
-        public int alcoholused { get; set; }
+        public int AlcoholUsed { get; set; }
 
         [JsonProperty("energydrinkused")]
-        public int energydrinkused { get; set; }
+        public int EnergyDrinksUsed { get; set; }
 
         [JsonProperty("nerverefills")]
-        public int nerverefills { get; set; }
+        public int NerveRefills { get; set; }
 
         [JsonProperty("organisedcrimes")]
-        public int organisedcrimes { get; set; }
+        public int OrganisedCrimesCompleted { get; set; }
 
         [JsonProperty("xantaken")]
-        public int xantaken { get; set; }
+        public int XanaxTaken { get; set; }
 
         [JsonProperty("stockpayouts")]
-        public int stockpayouts { get; set; }
+        public int StockPayouts { get; set; }
 
         [JsonProperty("overdosed")]
-        public int overdosed { get; set; }
+        public int TimesOverdosed { get; set; }
 
         [JsonProperty("traveltime")]
-        public int traveltime { get; set; }
+        public int TravelTime { get; set; }
 
         [JsonProperty("boostersused")]
-        public int boostersused { get; set; }
+        public int BoostersUsed { get; set; }
 
         [JsonProperty("territorytime")]
-        public int territorytime { get; set; }
+        public int TerritoryTime { get; set; }
 
         [JsonProperty("victaken")]
-        public int victaken { get; set; }
+        public int VicodinTaken { get; set; }
 
         [JsonProperty("h2hhits")]
-        public int h2hhits { get; set; }
+        public int UnarmedHits { get; set; }
 
         [JsonProperty("bountiescollected")]
-        public int bountiescollected { get; set; }
+        public int BountiesCollected { get; set; }
 
         [JsonProperty("totalbountyreward")]
-        public int totalbountyreward { get; set; }
+        public int TotalBountyReward { get; set; }
 
         [JsonProperty("attacksassisted")]
-        public int attacksassisted { get; set; }
+        public int AttacksAssisted { get; set; }
 
         [JsonProperty("lsdtaken")]
-        public int lsdtaken { get; set; }
+        public int LsdTaken { get; set; }
 
         [JsonProperty("pishits")]
-        public int pishits { get; set; }
+        public int PistolHits { get; set; }
 
         [JsonProperty("switravel")]
-        public int switravel { get; set; }
+        public int TimesTraveledToSwitzerland { get; set; }
 
         [JsonProperty("rehabs")]
-        public int rehabs { get; set; }
+        public int Rehabs { get; set; }
 
         [JsonProperty("rehabcost")]
-        public int rehabcost { get; set; }
+        public int RehabCost { get; set; }
 
         [JsonProperty("booksread")]
-        public int booksread { get; set; }
+        public int BooksRead { get; set; }
 
         [JsonProperty("heahits")]
-        public int heahits { get; set; }
+        public int HeavyHits { get; set; }
 
         [JsonProperty("awards")]
-        public int awards { get; set; }
+        public int Awards { get; set; }
 
         [JsonProperty("spetaken")]
-        public int spetaken { get; set; }
+        public int SpeedTaken { get; set; }
 
         [JsonProperty("lontravel")]
-        public int lontravel { get; set; }
+        public int TimesTraveledToLondon { get; set; }
 
         [JsonProperty("chahits")]
-        public int chahits { get; set; }
+        public int MachineHits { get; set; }
 
         [JsonProperty("refills")]
-        public int refills { get; set; }
+        public int Refills { get; set; }
 
         [JsonProperty("racingpointsearned")]
-        public int racingpointsearned { get; set; }
+        public int RacingPointsEarned { get; set; }
 
         [JsonProperty("raceswon")]
-        public int raceswon { get; set; }
+        public int RacesWon { get; set; }
 
         [JsonProperty("racesentered")]
-        public int racesentered { get; set; }
+        public int RacesEntered { get; set; }
 
         [JsonProperty("racingskill")]
-        public int racingskill { get; set; }
+        public int RacingSkill { get; set; }
     }
 }

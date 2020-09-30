@@ -35,12 +35,12 @@ namespace TornJsonData.Contract.Torn
         [JsonProperty("created")]
         public int CreatedTimestamp { get; set; }
 
-        public System.DateTime CreatedDateTime { get { return System.DateTime.UnixEpoch.AddSeconds(CreatedTimestamp); } }
+        public System.DateTime CreatedDateTime => System.DateTime.UnixEpoch.AddSeconds(CreatedTimestamp);
 
         [JsonProperty("changed")]
         public int ChangedTimestamp { get; set; }
 
-        public System.DateTime ChangedDateTime { get { return System.DateTime.UnixEpoch.AddSeconds(ChangedTimestamp); } }
+        public System.DateTime ChangedDateTime => System.DateTime.UnixEpoch.AddSeconds(ChangedTimestamp);
 
         [JsonProperty("faction")]
         public int Faction { get; set; }

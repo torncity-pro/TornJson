@@ -74,7 +74,7 @@ namespace TornJsonData.Contract.User
         public int RifleMastery { get; set; }
 
         [JsonProperty("SMG Mastery")]
-        public int SMGMastery { get; set; }
+        public int SmgMastery { get; set; }
 
         [JsonProperty("Shotgun Mastery")]
         public int ShotgunMastery { get; set; }
