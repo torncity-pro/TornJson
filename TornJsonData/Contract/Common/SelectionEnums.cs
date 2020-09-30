@@ -30,7 +30,7 @@ namespace TornJsonData.Contract.Common
         news,
         newsfull,
         profile,
-        stock,
+        stock
     }
 
     [Flags]
@@ -70,7 +70,7 @@ namespace TornJsonData.Contract.Common
         temporary,
         territory,
         upgrades,
-        weapons,
+        weapons
     }
 
     [Flags]
@@ -80,7 +80,7 @@ namespace TornJsonData.Contract.Common
         timestamp = 1,
         bazaar,
         itemmarket,
-        pointsmarket,
+        pointsmarket
     }
 
     [Flags]
@@ -88,7 +88,7 @@ namespace TornJsonData.Contract.Common
     {
         lookup = 0,
         timestamp = 1,
-        property,
+        property
     }
 
     [Flags]
@@ -109,7 +109,7 @@ namespace TornJsonData.Contract.Common
         rackets,
         stats,
         stocks,
-        territory,
+        territory
     }
 
     [Flags]
@@ -152,7 +152,7 @@ namespace TornJsonData.Contract.Common
         stocks,
         travel,
         weaponexp,
-        workstats,
+        workstats
     }
 
 }
