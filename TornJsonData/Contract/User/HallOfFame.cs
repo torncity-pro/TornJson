@@ -35,7 +35,7 @@ namespace TornJsonData.Contract.User
         public HallOfFameEntry Attacks { get; set; }
 
         [JsonProperty("battlestats")]
-        public HallOfFameEntry Battlestats { get; set; }
+        public HallOfFameEntry BattleStats { get; set; }
 
         [JsonProperty("busts")]
         public HallOfFameEntry Busts { get; set; }
@@ -56,7 +56,7 @@ namespace TornJsonData.Contract.User
         public HallOfFameEntry Traveled { get; set; }
 
         [JsonProperty("workstats")]
-        public HallOfFameEntry Workstats { get; set; }
+        public HallOfFameEntry WorkStats { get; set; }
 
         [JsonProperty("level")]
         public HallOfFameEntry Level { get; set; }

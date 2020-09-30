@@ -44,7 +44,7 @@ namespace TornJsonData.Contract.Company
         public short Popularity { get; set; }
 
         /// <summary>
-        /// The % effeciency of the company
+        /// The % efficiency of the company
         /// </summary>
         [JsonProperty("efficiency")]
         public short Efficiency { get; set; }

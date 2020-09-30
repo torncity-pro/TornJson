@@ -65,10 +65,10 @@ namespace TornJsonData.Contract.Faction
         public int Revives { get; set; }
 
         [JsonProperty("jails")]
-        public int Jails { get; set; }
+        public int TimesInJail { get; set; }
 
         [JsonProperty("hosps")]
-        public int Hosps { get; set; }
+        public int TimesInHospital { get; set; }
 
         [JsonProperty("medicalitemrecovery")]
         public int MedicalItemRecovery { get; set; }

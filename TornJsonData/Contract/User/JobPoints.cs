@@ -49,7 +49,7 @@ namespace TornJsonData.Contract.User
         public int JobPoints { get; set; }
     }
 
-    public class Jobpoints
+    public class JobPoints
     {
         [JsonProperty("jobs")]
         public CityJobPoints Jobs { get; set; }

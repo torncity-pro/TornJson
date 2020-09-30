@@ -99,7 +99,7 @@ namespace TornJsonData.Contract.User
         public int Cost { get; set; }
 
         [JsonProperty("marketprice")]
-        public int Marketprice { get; set; }
+        public int MarketPrice { get; set; }
 
         [JsonProperty("modifications")]
         public Modifications Modifications { get; set; }

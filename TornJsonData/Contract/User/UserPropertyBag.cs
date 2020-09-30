@@ -16,7 +16,9 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using Newtonsoft.Json;
 using TornJsonData.Contract.Common;
 
@@ -25,7 +27,7 @@ namespace TornJsonData.Contract.User
     public class UserPropertyBag : PropertyBagBase
     {
         [JsonProperty("id")]
-        public string id => PlayerId.ToString();
+        public string id => PlayerId.ToString(CultureInfo.InvariantCulture);
 
         [JsonProperty("level")]
         public byte Level { get; set; }
@@ -122,7 +124,7 @@ namespace TornJsonData.Contract.User
         public HallOfFame HallOfFame { get; set; }
 
         [JsonProperty("merits")]
-        public Merits Mertis { get; set; }
+        public Merits Merits { get; set; }
 
         [JsonProperty("active_gym")]
         public byte ActiveGym { get; set; }
@@ -131,7 +133,7 @@ namespace TornJsonData.Contract.User
         public Refills Refills { get; set; }
 
         [JsonProperty("jobpoints")]
-        public Jobpoints JobPoints { get; set; }
+        public JobPoints JobPoints { get; set; }
 
         [JsonProperty("properties")]
         [JsonConverter(typeof(TornListConverter<TornProperty>))]
@@ -240,7 +242,7 @@ namespace TornJsonData.Contract.User
         public long DailyNetworth { get; set; }
 
         [JsonProperty("money_onhand")]
-        public int MoneyOnhand { get; set; }
+        public int MoneyOnHand { get; set; }
 
         [JsonProperty("city_bank")]
         public CityBank CityBank { get; set; }

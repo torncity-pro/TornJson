@@ -62,7 +62,7 @@ namespace TornJsonData.Contract.User
         public int AttacksStalemated { get; set; }
 
         [JsonProperty("bestkillstreak")]
-        public int BestKillstreak { get; set; }
+        public int BestKillStreak { get; set; }
 
         [JsonProperty("killstreak")]
         public int CurrentKillStreak { get; set; }
@@ -248,7 +248,7 @@ namespace TornJsonData.Contract.User
         public int MissionCreditsEarned { get; set; }
 
         [JsonProperty("contractscompleted")]
-        public int ContractsCmpleted { get; set; }
+        public int ContractsCompleted { get; set; }
 
         [JsonProperty("dukecontractscompleted")]
         public int DukeContractsCompleted { get; set; }

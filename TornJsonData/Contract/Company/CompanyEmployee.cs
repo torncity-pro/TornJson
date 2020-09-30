@@ -63,7 +63,7 @@ namespace TornJsonData.Contract.Company
         public int Intelligence { get; set; }
 
         /// <summary>
-        /// The employees endurace stat
+        /// The employees endurance stat
         /// </summary>
         [JsonProperty("endurance")]
         public int Endurance { get; set; }
