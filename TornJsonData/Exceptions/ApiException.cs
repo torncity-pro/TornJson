@@ -25,7 +25,7 @@ namespace TornJsonData.Exceptions
     /// <summary>
     /// An extension of exception specific to exceptions thrown by the Torn API
     /// </summary>
-    [Serializable()]
+    [Serializable]
     public class ApiException : Exception
     {
         /// <summary>
@@ -36,15 +36,10 @@ namespace TornJsonData.Exceptions
         /// <summary>
         /// Constructor
         /// </summary>
-        public ApiException() : base() { }
-
-        /// <summary>
-        /// Constructor
-        /// </summary>
         /// <param name="error">Torn API Error info object</param>
         public ApiException(TornExceptionInfo error) : base(error?.ErrorMessage ?? throw new ArgumentNullException(nameof(error)))
         {
-            this.TornErrorInfo = error;
+            TornErrorInfo = error;
         }
 
         /// <summary>
@@ -64,7 +59,7 @@ namespace TornJsonData.Exceptions
         /// Constructor
         /// </summary>
         /// <param name="info">Serialization info</param>
-        /// <param name="context">Conext</param>
+        /// <param name="context">Context</param>
         protected ApiException(SerializationInfo info, StreamingContext context) : base(info, context) { }
 
         /// <summary>
@@ -73,7 +68,7 @@ namespace TornJsonData.Exceptions
         /// <returns>True if it is retryable</returns>
         public bool IsRetryable()
         {
-            if (this.TornErrorInfo == null)
+            if (TornErrorInfo == null)
             {
                 return false;
             }
@@ -84,7 +79,7 @@ namespace TornJsonData.Exceptions
                 8 => true,
                 9 => true,
                 12 => true,
-                _ => false,
+                _ => false
             };
         }
 
@@ -114,7 +109,7 @@ namespace TornJsonData.Exceptions
                 10 => new PlayerBannedException(ex),
                 11 => new ApiKeyChangeException(ex),
                 12 => new ApiKeyReadException(ex),
-                _ => new UnknownException(ex),
+                _ => new UnknownException(ex)
             };
         }
     }

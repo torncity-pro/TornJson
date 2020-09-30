@@ -37,7 +37,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public UnknownException(string message, System.Exception innerException) : base(message, innerException)
+        public UnknownException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
@@ -63,7 +63,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public EmptyApiKeyException(string message, System.Exception innerException) : base(message, innerException)
+        public EmptyApiKeyException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
@@ -89,7 +89,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public IncorrectApiKeyException(string message, System.Exception innerException) : base(message, innerException)
+        public IncorrectApiKeyException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
@@ -115,7 +115,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public WrongTypeException(string message, System.Exception innerException) : base(message, innerException)
+        public WrongTypeException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
@@ -141,7 +141,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public WrongFieldException(string message, System.Exception innerException) : base(message, innerException)
+        public WrongFieldException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
@@ -167,7 +167,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public TooManyRequestsException(string message, System.Exception innerException) : base(message, innerException)
+        public TooManyRequestsException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
@@ -193,7 +193,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public IncorrectIdException(string message, System.Exception innerException) : base(message, innerException)
+        public IncorrectIdException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
@@ -219,7 +219,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public IncorrectIdEntityRelationException(string message, System.Exception innerException) : base(message, innerException)
+        public IncorrectIdEntityRelationException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
@@ -245,7 +245,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public BlockedIpException(string message, System.Exception innerException) : base(message, innerException)
+        public BlockedIpException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
@@ -267,7 +267,7 @@ namespace TornJsonData.Exceptions
 
         public ApiDisabledException(string message) : base(message) { }
 
-        public ApiDisabledException(string message, System.Exception innerException) : base(message, innerException) { }
+        public ApiDisabledException(string message, Exception innerException) : base(message, innerException) { }
 
         protected ApiDisabledException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
         {
@@ -291,7 +291,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public PlayerBannedException(string message, System.Exception innerException) : base(message, innerException)
+        public PlayerBannedException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
@@ -317,7 +317,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public ApiKeyChangeException(string message, System.Exception innerException) : base(message, innerException)
+        public ApiKeyChangeException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
@@ -343,7 +343,7 @@ namespace TornJsonData.Exceptions
         {
         }
 
-        public ApiKeyReadException(string message, System.Exception innerException) : base(message, innerException)
+        public ApiKeyReadException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
