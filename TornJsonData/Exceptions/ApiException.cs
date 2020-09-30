@@ -34,6 +34,11 @@ namespace TornJsonData.Exceptions
         public TornExceptionInfo TornErrorInfo { get; private set; }
 
         /// <summary>
+        /// Default constructor
+        /// </summary>
+        public ApiException() { }
+
+        /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="error">Torn API Error info object</param>
