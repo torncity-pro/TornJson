@@ -16,7 +16,9 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Fields
+using TornJsonData.Contract.Common;
+
+namespace TornJsonData.Contract.Torn
 {
     public class TornField : ApiField
     {

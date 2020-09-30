@@ -16,10 +16,10 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Contract.UserData
-{
-    using Newtonsoft.Json;
+using Newtonsoft.Json;
 
+namespace TornJsonData.Contract.User
+{
     public class NetworthData
     {
         [JsonProperty("pending")]

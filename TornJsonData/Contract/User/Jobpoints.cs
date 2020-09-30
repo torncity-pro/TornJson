@@ -16,12 +16,12 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Contract.UserData
-{
-    using Newtonsoft.Json;
-    using Common;
-    using System.Collections.Generic;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+using TornJsonData.Contract.Common;
 
+namespace TornJsonData.Contract.User
+{
     public class CityJobPoints
     {
         [JsonProperty("medical")]

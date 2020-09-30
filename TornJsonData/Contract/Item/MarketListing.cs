@@ -16,11 +16,11 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Contract.ItemData
-{
-    using Newtonsoft.Json;
-    using Common;
+using Newtonsoft.Json;
+using TornJsonData.Contract.Common;
 
+namespace TornJsonData.Contract.Item
+{
     /// <summary>
     /// A listing in a market
     /// </summary>

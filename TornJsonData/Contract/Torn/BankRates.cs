@@ -16,9 +16,10 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Contract.TornData
+using Newtonsoft.Json;
+
+namespace TornJsonData.Contract.Torn
 {
-    using Newtonsoft.Json;
     public class BankRates
     {
         [JsonProperty("1w")]

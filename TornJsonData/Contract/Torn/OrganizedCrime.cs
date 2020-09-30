@@ -16,11 +16,11 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Contract.TornData
-{
-    using Newtonsoft.Json;
-    using Common;
+using Newtonsoft.Json;
+using TornJsonData.Contract.Common;
 
+namespace TornJsonData.Contract.Torn
+{
     public class OrganizedCrime : ApiListItem
     {
         [JsonProperty("name")]

@@ -16,11 +16,11 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Contract.UserData
-{
-    using Newtonsoft.Json;
-    using System.Collections.Generic;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
+namespace TornJsonData.Contract.User
+{
     public class BattleStats
     {
         [JsonProperty("strength")]

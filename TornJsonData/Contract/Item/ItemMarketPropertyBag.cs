@@ -16,12 +16,12 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Contract.ItemData
-{
-    using Newtonsoft.Json;
-    using Common;
-    using System.Collections.Generic;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+using TornJsonData.Contract.Common;
 
+namespace TornJsonData.Contract.Item
+{
     /// <summary>
     /// A root level object to hold all the object values returned by the api
     /// </summary>

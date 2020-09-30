@@ -16,7 +16,9 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Fields
+using TornJsonData.Contract.Common;
+
+namespace TornJsonData.Contract.Properties
 {
     /// <summary>
     /// The class which holds all the queryable fields for the properties endpoint

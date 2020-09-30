@@ -16,12 +16,12 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Contract.PropertyData
-{
-    using Newtonsoft.Json;
-    using Common;
-    using System.Collections.Generic;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+using TornJsonData.Contract.Common;
 
+namespace TornJsonData.Contract.Properties
+{
     /// <summary>
     /// Represents an object with all possible root level keys that can be returned from the (real estate) property api url
     /// </summary>

@@ -16,11 +16,11 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Contract.TornData
+using System.Collections.Generic;
+using Newtonsoft.Json;
+
+namespace TornJsonData.Contract.Torn
 {
-    using Newtonsoft.Json;
-    using System.Collections.Generic;
-    
     public class Competition
     {
         [JsonProperty("name")]

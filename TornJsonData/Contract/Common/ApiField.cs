@@ -16,7 +16,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-namespace TornJsonData.Fields
+namespace TornJsonData.Contract.Common
 {
     /// <summary>
     /// Meant to be inherited to specify string value constants to give to the selection field in the api
