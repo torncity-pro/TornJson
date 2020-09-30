@@ -32,7 +32,7 @@
     <Description>An interface to the Torn City API.</Description>
     <PackageTags>Torn TornCity City API</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/torncity-pro/TornApiProxy</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/torncity-pro/TornApiProxy</RepositoryUrl>
   </PropertyGroup>
