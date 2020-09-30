@@ -16,21 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-using TornJson.CommonData;
-
-namespace TornJson.ItemData
+namespace TornJson.Fields
 {
     /// <summary>
-    /// Strings that can be queried from the API
+    /// Company fields that can be queried
     /// </summary>
-    public class ItemField : ApiField
+    public class CompanyField : ApiField
     {
-        protected ItemField(string fieldName) : base(fieldName) { }
+        protected CompanyField(string fieldName) : base(fieldName) { }
 
-        public static readonly ItemField ItemMarket = new ItemField("itemmarket");
-        public static readonly ItemField Bazaar = new ItemField("bazaar");
-        public static readonly ItemField PointsMarket = new ItemField("pointsmarket");
-        public static readonly ItemField Lookup = new ItemField("lookup");
-        public static readonly ItemField Timestamp = new ItemField("timestamp");
+        public static readonly CompanyField Profile = new CompanyField("profile");
+        public static readonly CompanyField Detailed = new CompanyField("detailed");
+        public static readonly CompanyField Stock = new CompanyField("stock");
+        public static readonly CompanyField Employees = new CompanyField("employees");
+        public static readonly CompanyField News = new CompanyField("news");
+        public static readonly CompanyField NewsFull = new CompanyField("newsfull");
+        public static readonly CompanyField Lookup = new CompanyField("lookup");
+        public static readonly CompanyField Timestamp = new CompanyField("timestamp");
     }
 }

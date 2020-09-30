@@ -16,22 +16,19 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-using TornJson.CommonData;
-
-namespace TornJson.PropertyData
+namespace TornJson.Fields
 {
     /// <summary>
-    /// The class which holds all the queryable fields for the properties endpoint
+    /// Strings that can be queried from the API
     /// </summary>
-    public class PropertyField : ApiField
+    public class ItemField : ApiField
     {
-        protected PropertyField(string fieldName) : base(fieldName) { }
+        protected ItemField(string fieldName) : base(fieldName) { }
 
-        /// <summary>
-        /// Properties only has one selection aside from timestamp "property"
-        /// </summary>
-        public static readonly PropertyField Property = new PropertyField("property");
-        public static readonly PropertyField Lookup = new PropertyField("lookup");
-        public static readonly PropertyField Timestamp = new PropertyField("timestamp");
+        public static readonly ItemField ItemMarket = new ItemField("itemmarket");
+        public static readonly ItemField Bazaar = new ItemField("bazaar");
+        public static readonly ItemField PointsMarket = new ItemField("pointsmarket");
+        public static readonly ItemField Lookup = new ItemField("lookup");
+        public static readonly ItemField Timestamp = new ItemField("timestamp");
     }
 }

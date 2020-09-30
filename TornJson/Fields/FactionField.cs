@@ -16,9 +16,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-using TornJson.CommonData;
-
-namespace TornJson.FactionData
+namespace TornJson.Fields
 {
     public class FactionField : ApiField
     {
