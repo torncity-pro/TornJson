@@ -23,13 +23,10 @@ namespace TornJson.UserData
 {
     public class TornEvent : ApiListItem
     {
-        [JsonProperty("timestamp")]
-        public int Timestamp { get; set; }
+        [JsonProperty("timestamp")] public int Timestamp { get; set; }
 
-        [JsonProperty("event")]
-        public string Text { get; set; }
+        [JsonProperty("event")] public string Text { get; set; }
 
-        [JsonProperty("seen")]
-        public bool Seen { get; set; }
+        [JsonProperty("seen")] public bool Seen { get; set; }
     }
 }

@@ -23,37 +23,27 @@ namespace TornJson.FactionData
 {
     public class FactionApplication : ApiListItem
     {
-        [JsonProperty("userID")]
-        public string UserId { get; set; }
+        [JsonProperty("userID")] public string UserId { get; set; }
 
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("level")]
-        public int Level { get; set; }
-		
-        [JsonProperty("stats")]
-        public FactionApplicationStats Stats { get; set; }
+        [JsonProperty("level")] public int Level { get; set; }
 
-        [JsonProperty("message")]
-        public string Message { get; set; }
+        [JsonProperty("stats")] public FactionApplicationStats Stats { get; set; }
 
-        [JsonProperty("expires")]
-        public long Expiration { get; set; }
-	}
+        [JsonProperty("message")] public string Message { get; set; }
+
+        [JsonProperty("expires")] public long Expiration { get; set; }
+    }
 
     public class FactionApplicationStats
     {
-        [JsonProperty("strength")]
-        public long Strength { get; set; }
-        
-        [JsonProperty("speed")]
-        public long Speed { get; set; }
+        [JsonProperty("strength")] public long Strength { get; set; }
 
-        [JsonProperty("dexterity")]
-        public long Dexterity { get; set; }
+        [JsonProperty("speed")] public long Speed { get; set; }
 
-        [JsonProperty("defence")]
-        public long Defence { get; set; }
+        [JsonProperty("dexterity")] public long Dexterity { get; set; }
+
+        [JsonProperty("defence")] public long Defence { get; set; }
     }
 }

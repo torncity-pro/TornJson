@@ -19,16 +19,18 @@
 namespace TornJson.Fields
 {
     /// <summary>
-    /// Strings that can be queried from the API
+    ///     Strings that can be queried from the API
     /// </summary>
     public class ItemField : ApiField
     {
-        protected ItemField(string fieldName) : base(fieldName) { }
-
         public static readonly ItemField ItemMarket = new ItemField("itemmarket");
         public static readonly ItemField Bazaar = new ItemField("bazaar");
         public static readonly ItemField PointsMarket = new ItemField("pointsmarket");
         public static readonly ItemField Lookup = new ItemField("lookup");
         public static readonly ItemField Timestamp = new ItemField("timestamp");
+
+        protected ItemField(string fieldName) : base(fieldName)
+        {
+        }
     }
 }

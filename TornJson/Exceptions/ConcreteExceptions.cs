@@ -16,19 +16,21 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
+using System;
+using System.Runtime.Serialization;
 using TornJson.CommonData;
 
 namespace TornJson.Exceptions
 {
-    using System;
-
     /// <summary>
-    /// Represents error code 0
+    ///     Represents error code 0
     /// </summary>
     [Serializable]
     public class UnknownException : ApiException
     {
-        public UnknownException(TornExceptionInfo ex) : base(ex) { }
+        public UnknownException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public UnknownException()
         {
@@ -42,19 +44,21 @@ namespace TornJson.Exceptions
         {
         }
 
-        protected UnknownException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected UnknownException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 1
+    ///     Represents error code 1
     /// </summary>
     [Serializable]
     public class EmptyApiKeyException : ApiException
     {
-        public EmptyApiKeyException(TornExceptionInfo ex) : base(ex) { }
+        public EmptyApiKeyException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public EmptyApiKeyException()
         {
@@ -68,19 +72,21 @@ namespace TornJson.Exceptions
         {
         }
 
-        protected EmptyApiKeyException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected EmptyApiKeyException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 2
+    ///     Represents error code 2
     /// </summary>
     [Serializable]
     public class IncorrectApiKeyException : ApiException
     {
-        public IncorrectApiKeyException(TornExceptionInfo ex) : base(ex) { }
+        public IncorrectApiKeyException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public IncorrectApiKeyException()
         {
@@ -94,19 +100,21 @@ namespace TornJson.Exceptions
         {
         }
 
-        protected IncorrectApiKeyException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected IncorrectApiKeyException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 3
+    ///     Represents error code 3
     /// </summary>
     [Serializable]
     public class WrongTypeException : ApiException
     {
-        public WrongTypeException(TornExceptionInfo ex) : base(ex) { }
+        public WrongTypeException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public WrongTypeException()
         {
@@ -120,19 +128,21 @@ namespace TornJson.Exceptions
         {
         }
 
-        protected WrongTypeException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected WrongTypeException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 4
+    ///     Represents error code 4
     /// </summary>
     [Serializable]
     public class WrongFieldException : ApiException
     {
-        public WrongFieldException(TornExceptionInfo ex) : base(ex) { }
+        public WrongFieldException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public WrongFieldException()
         {
@@ -146,19 +156,21 @@ namespace TornJson.Exceptions
         {
         }
 
-        protected WrongFieldException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected WrongFieldException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 5
+    ///     Represents error code 5
     /// </summary>
     [Serializable]
     public class TooManyRequestsException : ApiException
     {
-        public TooManyRequestsException(TornExceptionInfo ex) : base(ex) { }
+        public TooManyRequestsException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public TooManyRequestsException()
         {
@@ -172,19 +184,21 @@ namespace TornJson.Exceptions
         {
         }
 
-        protected TooManyRequestsException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected TooManyRequestsException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 6
+    ///     Represents error code 6
     /// </summary>
     [Serializable]
     public class IncorrectIdException : ApiException
     {
-        public IncorrectIdException(TornExceptionInfo ex) : base(ex) { }
+        public IncorrectIdException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public IncorrectIdException()
         {
@@ -198,19 +212,21 @@ namespace TornJson.Exceptions
         {
         }
 
-        protected IncorrectIdException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected IncorrectIdException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 7
+    ///     Represents error code 7
     /// </summary>
     [Serializable]
     public class IncorrectIdEntityRelationException : ApiException
     {
-        public IncorrectIdEntityRelationException(TornExceptionInfo ex) : base(ex) { }
+        public IncorrectIdEntityRelationException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public IncorrectIdEntityRelationException()
         {
@@ -220,23 +236,27 @@ namespace TornJson.Exceptions
         {
         }
 
-        public IncorrectIdEntityRelationException(string message, Exception innerException) : base(message, innerException)
+        public IncorrectIdEntityRelationException(string message, Exception innerException) : base(message,
+            innerException)
         {
         }
 
-        protected IncorrectIdEntityRelationException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected IncorrectIdEntityRelationException(SerializationInfo serializationInfo,
+            StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 8
+    ///     Represents error code 8
     /// </summary>
     [Serializable]
     public class BlockedIpException : ApiException
     {
-        public BlockedIpException(TornExceptionInfo ex) : base(ex) { }
+        public BlockedIpException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public BlockedIpException()
         {
@@ -250,39 +270,49 @@ namespace TornJson.Exceptions
         {
         }
 
-        protected BlockedIpException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected BlockedIpException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 9
+    ///     Represents error code 9
     /// </summary>
     [Serializable]
     public class ApiDisabledException : ApiException
     {
-        public ApiDisabledException(TornExceptionInfo ex) : base(ex) { }
+        public ApiDisabledException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
-        public ApiDisabledException() { }
+        public ApiDisabledException()
+        {
+        }
 
-        public ApiDisabledException(string message) : base(message) { }
+        public ApiDisabledException(string message) : base(message)
+        {
+        }
 
-        public ApiDisabledException(string message, Exception innerException) : base(message, innerException) { }
+        public ApiDisabledException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
 
-        protected ApiDisabledException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected ApiDisabledException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 10
+    ///     Represents error code 10
     /// </summary>
     [Serializable]
     public class PlayerBannedException : ApiException
     {
-        public PlayerBannedException(TornExceptionInfo ex) : base(ex) { }
+        public PlayerBannedException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public PlayerBannedException()
         {
@@ -296,19 +326,21 @@ namespace TornJson.Exceptions
         {
         }
 
-        protected PlayerBannedException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected PlayerBannedException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 11
+    ///     Represents error code 11
     /// </summary>
     [Serializable]
     public class ApiKeyChangeException : ApiException
     {
-        public ApiKeyChangeException(TornExceptionInfo ex) : base(ex) { }
+        public ApiKeyChangeException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public ApiKeyChangeException()
         {
@@ -322,19 +354,21 @@ namespace TornJson.Exceptions
         {
         }
 
-        protected ApiKeyChangeException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected ApiKeyChangeException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
     }
 
     /// <summary>
-    /// Represents error code 12
+    ///     Represents error code 12
     /// </summary>
     [Serializable]
     public class ApiKeyReadException : ApiException
     {
-        public ApiKeyReadException(TornExceptionInfo ex) : base(ex) { }
+        public ApiKeyReadException(TornExceptionInfo ex) : base(ex)
+        {
+        }
 
         public ApiKeyReadException()
         {
@@ -348,7 +382,7 @@ namespace TornJson.Exceptions
         {
         }
 
-        protected ApiKeyReadException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected ApiKeyReadException(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }

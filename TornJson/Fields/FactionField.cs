@@ -20,8 +20,6 @@ namespace TornJson.Fields
 {
     public class FactionField : ApiField
     {
-        protected FactionField(string fieldName) : base(fieldName) { }
-
         public static readonly FactionField Basic = new FactionField("basic");
         public static readonly FactionField Territory = new FactionField("territory");
         public static readonly FactionField Chain = new FactionField("chain");
@@ -56,5 +54,9 @@ namespace TornJson.Fields
         public static readonly FactionField Chains = new FactionField("chains");
         public static readonly FactionField Lookup = new FactionField("lookup");
         public static readonly FactionField Timestamp = new FactionField("timestamp");
+
+        protected FactionField(string fieldName) : base(fieldName)
+        {
+        }
     }
 }

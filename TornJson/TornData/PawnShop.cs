@@ -22,10 +22,8 @@ namespace TornJson.TornData
 {
     public class PawnShop
     {
-        [JsonProperty("points_value")]
-        public int PointsValue { get; set; }
+        [JsonProperty("points_value")] public int PointsValue { get; set; }
 
-        [JsonProperty("donatorpack_value")]
-        public int DonatorPackValue { get; set; }
+        [JsonProperty("donatorpack_value")] public int DonatorPackValue { get; set; }
     }
 }

@@ -22,13 +22,10 @@ namespace TornJson.UserData
 {
     public class WeaponExp
     {
-        [JsonProperty("itemID")]
-        public int ItemId { get; set; }
+        [JsonProperty("itemID")] public int ItemId { get; set; }
 
-        [JsonProperty("name")]
-		public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("exp")]
-		public int Exp { get; set; }
+        [JsonProperty("exp")] public int Exp { get; set; }
     }
 }

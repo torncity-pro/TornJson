@@ -23,16 +23,12 @@ namespace TornJson.FactionData
 {
     public class Chain : ApiListItem
     {
-        [JsonProperty("chain")]
-        public int HitCount { get; set; }
+        [JsonProperty("chain")] public int HitCount { get; set; }
 
-        [JsonProperty("respect")]
-        public string Respect { get; set; }
+        [JsonProperty("respect")] public string Respect { get; set; }
 
-        [JsonProperty("start")]
-        public int Start { get; set; }
+        [JsonProperty("start")] public int Start { get; set; }
 
-        [JsonProperty("end")]
-        public int End { get; set; }
+        [JsonProperty("end")] public int End { get; set; }
     }
 }

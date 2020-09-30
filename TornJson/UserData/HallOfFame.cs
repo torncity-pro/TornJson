@@ -22,49 +22,35 @@ namespace TornJson.UserData
 {
     public class HallOfFameEntry
     {
-        [JsonProperty("value")]
-        public long Value { get; set; }
+        [JsonProperty("value")] public long Value { get; set; }
 
-        [JsonProperty("rank")]
-        public long Rank { get; set; }
+        [JsonProperty("rank")] public long Rank { get; set; }
     }
 
     public class HallOfFame
     {
-        [JsonProperty("attacks")]
-        public HallOfFameEntry Attacks { get; set; }
+        [JsonProperty("attacks")] public HallOfFameEntry Attacks { get; set; }
 
-        [JsonProperty("battlestats")]
-        public HallOfFameEntry BattleStats { get; set; }
+        [JsonProperty("battlestats")] public HallOfFameEntry BattleStats { get; set; }
 
-        [JsonProperty("busts")]
-        public HallOfFameEntry Busts { get; set; }
+        [JsonProperty("busts")] public HallOfFameEntry Busts { get; set; }
 
-        [JsonProperty("defends")]
-        public HallOfFameEntry Defends { get; set; }
+        [JsonProperty("defends")] public HallOfFameEntry Defends { get; set; }
 
-        [JsonProperty("networth")]
-        public HallOfFameEntry Networth { get; set; }
+        [JsonProperty("networth")] public HallOfFameEntry Networth { get; set; }
 
-        [JsonProperty("offences")]
-        public HallOfFameEntry Offences { get; set; }
+        [JsonProperty("offences")] public HallOfFameEntry Offences { get; set; }
 
-        [JsonProperty("revives")]
-        public HallOfFameEntry Revives { get; set; }
+        [JsonProperty("revives")] public HallOfFameEntry Revives { get; set; }
 
-        [JsonProperty("traveled")]
-        public HallOfFameEntry Traveled { get; set; }
+        [JsonProperty("traveled")] public HallOfFameEntry Traveled { get; set; }
 
-        [JsonProperty("workstats")]
-        public HallOfFameEntry WorkStats { get; set; }
+        [JsonProperty("workstats")] public HallOfFameEntry WorkStats { get; set; }
 
-        [JsonProperty("level")]
-        public HallOfFameEntry Level { get; set; }
+        [JsonProperty("level")] public HallOfFameEntry Level { get; set; }
 
-        [JsonProperty("rank")]
-        public HallOfFameEntry Rank { get; set; }
+        [JsonProperty("rank")] public HallOfFameEntry Rank { get; set; }
 
-        [JsonProperty("respect")]
-        public HallOfFameEntry Respect { get; set; }
+        [JsonProperty("respect")] public HallOfFameEntry Respect { get; set; }
     }
 }

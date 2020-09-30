@@ -23,19 +23,14 @@ namespace TornJson.TornData
 {
     public class FactionUpgrade : ApiListItem
     {
-        [JsonProperty("branch")]
-        public string Branch { get; set; }
+        [JsonProperty("branch")] public string Branch { get; set; }
 
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("ability")]
-        public string Ability { get; set; }
+        [JsonProperty("ability")] public string Ability { get; set; }
 
-        [JsonProperty("challenge")]
-        public string Challenge { get; set; }
+        [JsonProperty("challenge")] public string Challenge { get; set; }
 
-        [JsonProperty("base_cost")]
-        public int BaseCost { get; set; }
+        [JsonProperty("base_cost")] public int BaseCost { get; set; }
     }
 }

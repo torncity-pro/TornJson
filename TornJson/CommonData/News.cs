@@ -22,10 +22,8 @@ namespace TornJson.CommonData
 {
     public class News : ApiListItem
     {
-        [JsonProperty("news")]
-        public string Text { get; set; }
+        [JsonProperty("news")] public string Text { get; set; }
 
-        [JsonProperty("timestamp")]
-        public int Timestamp { get; set; }
+        [JsonProperty("timestamp")] public int Timestamp { get; set; }
     }
 }

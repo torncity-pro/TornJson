@@ -23,28 +23,20 @@ namespace TornJson.CommonData
 {
     public class Territory : ApiListItem
     {
-        [JsonProperty("sector")]
-        public byte Sector { get; set; }
+        [JsonProperty("sector")] public byte Sector { get; set; }
 
-        [JsonProperty("size")]
-        public byte Size { get; set; }
+        [JsonProperty("size")] public byte Size { get; set; }
 
-        [JsonProperty("density")]
-        public byte Density { get; set; }
+        [JsonProperty("density")] public byte Density { get; set; }
 
-        [JsonProperty("daily_respect")]
-        public short DailyRespect { get; set; }
+        [JsonProperty("daily_respect")] public short DailyRespect { get; set; }
 
-        [JsonProperty("faction")]
-        public int Faction { get; set; }
+        [JsonProperty("faction")] public int Faction { get; set; }
 
-        [JsonProperty("coordinate_x")]
-        public string CoordinateX { get; set; }
+        [JsonProperty("coordinate_x")] public string CoordinateX { get; set; }
 
-        [JsonProperty("coordinate_y")]
-        public string CoordinateY { get; set; }
+        [JsonProperty("coordinate_y")] public string CoordinateY { get; set; }
 
-        [JsonProperty("neighbors")]
-        public List<string> Neighbors { get; private set; }
+        [JsonProperty("neighbors")] public List<string> Neighbors { get; private set; }
     }
 }

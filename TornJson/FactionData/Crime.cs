@@ -24,43 +24,30 @@ namespace TornJson.FactionData
 {
     public class Crime : ApiListItem
     {
-        [JsonProperty("crime_id")]
-        public int CrimeId { get; set; }
+        [JsonProperty("crime_id")] public int CrimeId { get; set; }
 
-        [JsonProperty("crime_name")]
-        public string CrimeName { get; set; }
+        [JsonProperty("crime_name")] public string CrimeName { get; set; }
 
-        [JsonProperty("participants")]
-        public List<Dictionary<string, List<string>>> Participants { get; private set; }
+        [JsonProperty("participants")] public List<Dictionary<string, List<string>>> Participants { get; private set; }
 
-        [JsonProperty("time_started")]
-        public int TimeStarted { get; set; }
+        [JsonProperty("time_started")] public int TimeStarted { get; set; }
 
-        [JsonProperty("time_ready")]
-        public int TimeReady { get; set; }
+        [JsonProperty("time_ready")] public int TimeReady { get; set; }
 
-        [JsonProperty("time_left")]
-        public int TimeLeft { get; set; }
+        [JsonProperty("time_left")] public int TimeLeft { get; set; }
 
-        [JsonProperty("time_completed")]
-        public int TimeCompleted { get; set; }
+        [JsonProperty("time_completed")] public int TimeCompleted { get; set; }
 
-        [JsonProperty("initiated")]
-        public bool Initiated { get; set; }
+        [JsonProperty("initiated")] public bool Initiated { get; set; }
 
-        [JsonProperty("initiated_by")]
-        public int InitiatedBy { get; set; }
+        [JsonProperty("initiated_by")] public int InitiatedBy { get; set; }
 
-        [JsonProperty("planned_by")]
-        public int PlannedBy { get; set; }
+        [JsonProperty("planned_by")] public int PlannedBy { get; set; }
 
-        [JsonProperty("success")]
-        public bool Success { get; set; }
+        [JsonProperty("success")] public bool Success { get; set; }
 
-        [JsonProperty("money_gain")]
-        public int MoneyGain { get; set; }
+        [JsonProperty("money_gain")] public int MoneyGain { get; set; }
 
-        [JsonProperty("respect_gain")]
-        public int RespectGain { get; set; }
+        [JsonProperty("respect_gain")] public int RespectGain { get; set; }
     }
 }

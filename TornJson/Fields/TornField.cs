@@ -20,8 +20,6 @@ namespace TornJson.Fields
 {
     public class TornField : ApiField
     {
-        protected TornField(string fieldName) : base(fieldName) { }
-
         public static readonly TornField BankRates = new TornField("bank");
         public static readonly TornField Items = new TornField("items");
         public static readonly TornField Competition = new TornField("competition");
@@ -41,5 +39,9 @@ namespace TornJson.Fields
         public static readonly TornField TerritoryWars = new TornField("territorywars");
         public static readonly TornField Lookup = new TornField("lookup");
         public static readonly TornField Timestamp = new TornField("timestamp");
+
+        protected TornField(string fieldName) : base(fieldName)
+        {
+        }
     }
 }

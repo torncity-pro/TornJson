@@ -23,13 +23,10 @@ namespace TornJson.CommonData
 {
     public abstract class PropertyBagBase
     {
-        [JsonProperty("timestamp")]
-        public int Timestamp { get; set; }
+        [JsonProperty("timestamp")] public int Timestamp { get; set; }
 
-        [JsonProperty("selections")]
-        public List<string> Selections { get; private set; }
+        [JsonProperty("selections")] public List<string> Selections { get; private set; }
 
-        [JsonProperty("error")]
-        public TornExceptionInfo ErrorInfo { get; set; }
+        [JsonProperty("error")] public TornExceptionInfo ErrorInfo { get; set; }
     }
 }

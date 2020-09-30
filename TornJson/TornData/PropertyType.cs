@@ -24,22 +24,16 @@ namespace TornJson.TornData
 {
     public class PropertyType : ApiListItem
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("cost")]
-        public int? Cost { get; set; }
+        [JsonProperty("cost")] public int? Cost { get; set; }
 
-        [JsonProperty("happy")]
-        public short Happy { get; set; }
+        [JsonProperty("happy")] public short Happy { get; set; }
 
-        [JsonProperty("upkeep")]
-        public int Upkeep { get; set; }
+        [JsonProperty("upkeep")] public int Upkeep { get; set; }
 
-        [JsonProperty("upgrades_available")]
-        public List<string> UpgradesAvailable { get; private set; }
+        [JsonProperty("upgrades_available")] public List<string> UpgradesAvailable { get; private set; }
 
-        [JsonProperty("staff_available")]
-        public List<string> StaffAvailable { get; private set; }
+        [JsonProperty("staff_available")] public List<string> StaffAvailable { get; private set; }
     }
 }

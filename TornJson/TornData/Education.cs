@@ -16,6 +16,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
+using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using TornJson.CommonData;
@@ -24,42 +25,31 @@ namespace TornJson.TornData
 {
     public class Results
     {
-        [JsonProperty("perk")]
-        public List<string> Perk { get; private set; }
+        [JsonProperty("perk")] public List<string> Perk { get; private set; }
 
-        [JsonProperty("manual_labor")]
-        public List<string> ManualLabor { get; private set; }
+        [JsonProperty("manual_labor")] public List<string> ManualLabor { get; private set; }
 
-        [JsonProperty("intelligence")]
-        public List<string> Intelligence { get; private set; }
+        [JsonProperty("intelligence")] public List<string> Intelligence { get; private set; }
 
-        [JsonProperty("endurance")]
-        public List<string> Endurance { get; private set; }
+        [JsonProperty("endurance")] public List<string> Endurance { get; private set; }
     }
 
     public class Education : ApiListItem
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("description")]
-        public string Description { get; set; }
+        [JsonProperty("description")] public string Description { get; set; }
 
-        [JsonProperty("money_cost")]
-        public int MoneyCost { get; set; }
+        [JsonProperty("money_cost")] public int MoneyCost { get; set; }
 
-        [JsonProperty("tier")]
-        public byte Tier { get; set; }
+        [JsonProperty("tier")] public byte Tier { get; set; }
 
-        [JsonProperty("duration")]
-        public int DurationInSeconds { get; set; }
+        [JsonProperty("duration")] public int DurationInSeconds { get; set; }
 
-        public System.TimeSpan Duration => System.TimeSpan.FromSeconds(DurationInSeconds);
+        public TimeSpan Duration => TimeSpan.FromSeconds(DurationInSeconds);
 
-        [JsonProperty("results")]
-        public Results Results { get; set; }
+        [JsonProperty("results")] public Results Results { get; set; }
 
-        [JsonProperty("prerequisites")]
-        public List<string> Prerequisites { get; private set; }
+        [JsonProperty("prerequisites")] public List<string> Prerequisites { get; private set; }
     }
 }

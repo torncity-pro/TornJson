@@ -24,14 +24,11 @@ namespace TornJson.TornData
 {
     public class CompanyType : ApiListItem
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("cost")]
-        public long Cost { get; set; }
+        [JsonProperty("cost")] public long Cost { get; set; }
 
-        [JsonProperty("default_employees")]
-        public int DefaultEmployeeCount { get; set; }
+        [JsonProperty("default_employees")] public int DefaultEmployeeCount { get; set; }
 
         [JsonProperty("positions")]
         [JsonConverter(typeof(TornListConverter<CompanyPosition>))]
@@ -48,49 +45,36 @@ namespace TornJson.TornData
 
     public class CompanyPosition : ApiListItem
     {
-        [JsonProperty("man_required")]
-        public int ManualLaborRequired { get; set; }
+        [JsonProperty("man_required")] public int ManualLaborRequired { get; set; }
 
-        [JsonProperty("int_required")]
-        public int IntelligenceRequired { get; set; }
+        [JsonProperty("int_required")] public int IntelligenceRequired { get; set; }
 
-        [JsonProperty("end_required")]
-        public int EnduranceRequired { get; set; }
+        [JsonProperty("end_required")] public int EnduranceRequired { get; set; }
 
-        [JsonProperty("man_gain")]
-        public byte ManualLaborGain { get; set; }
+        [JsonProperty("man_gain")] public byte ManualLaborGain { get; set; }
 
-        [JsonProperty("int_gain")]
-        public byte IntelligenceGain { get; set; }
+        [JsonProperty("int_gain")] public byte IntelligenceGain { get; set; }
 
-        [JsonProperty("end_gain")]
-        public byte EnduranceGain { get; set; }
+        [JsonProperty("end_gain")] public byte EnduranceGain { get; set; }
 
-        [JsonProperty("special_ability")]
-        public string SpecialAbility { get; set; }
+        [JsonProperty("special_ability")] public string SpecialAbility { get; set; }
 
-        [JsonProperty("description")]
-        public string Description { get; set; }
+        [JsonProperty("description")] public string Description { get; set; }
     }
 
     public class CompanySpecial : ApiListItem
     {
-        [JsonProperty("effect")]
-        public string Effect { get; set; }
+        [JsonProperty("effect")] public string Effect { get; set; }
 
-        [JsonProperty("cost")]
-        public short Cost { get; set; }
+        [JsonProperty("cost")] public short Cost { get; set; }
 
-        [JsonProperty("rating_required")]
-        public byte RatingRequired { get; set; }
+        [JsonProperty("rating_required")] public byte RatingRequired { get; set; }
     }
 
     public class CompanyStock : ApiListItem
     {
-        [JsonProperty("cost")]
-        public int? Cost { get; set; }
+        [JsonProperty("cost")] public int? Cost { get; set; }
 
-        [JsonProperty("rrp")]
-        public int RecommendedRetailPrice { get; set; }
+        [JsonProperty("rrp")] public int RecommendedRetailPrice { get; set; }
     }
 }

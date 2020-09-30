@@ -23,25 +23,18 @@ namespace TornJson.UserData
 {
     public class Message : ApiListItem
     {
-        [JsonProperty("timestamp")]
-        public int Timestamp { get; set; }
+        [JsonProperty("timestamp")] public int Timestamp { get; set; }
 
-        [JsonProperty("ID")]
-        public int PlayerId { get; set; }
+        [JsonProperty("ID")] public int PlayerId { get; set; }
 
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("type")]
-        public string Type { get; set; }
+        [JsonProperty("type")] public string Type { get; set; }
 
-        [JsonProperty("title")]
-        public string Title { get; set; }
+        [JsonProperty("title")] public string Title { get; set; }
 
-        [JsonProperty("seen")]
-        public bool Seen { get; set; }
+        [JsonProperty("seen")] public bool Seen { get; set; }
 
-        [JsonProperty("read")]
-        public bool Read { get; set; }
+        [JsonProperty("read")] public bool Read { get; set; }
     }
 }

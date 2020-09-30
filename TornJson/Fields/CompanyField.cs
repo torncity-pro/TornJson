@@ -19,12 +19,10 @@
 namespace TornJson.Fields
 {
     /// <summary>
-    /// Company fields that can be queried
+    ///     Company fields that can be queried
     /// </summary>
     public class CompanyField : ApiField
     {
-        protected CompanyField(string fieldName) : base(fieldName) { }
-
         public static readonly CompanyField Profile = new CompanyField("profile");
         public static readonly CompanyField Detailed = new CompanyField("detailed");
         public static readonly CompanyField Stock = new CompanyField("stock");
@@ -33,5 +31,9 @@ namespace TornJson.Fields
         public static readonly CompanyField NewsFull = new CompanyField("newsfull");
         public static readonly CompanyField Lookup = new CompanyField("lookup");
         public static readonly CompanyField Timestamp = new CompanyField("timestamp");
+
+        protected CompanyField(string fieldName) : base(fieldName)
+        {
+        }
     }
 }

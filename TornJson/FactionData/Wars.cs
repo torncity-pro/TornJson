@@ -22,38 +22,30 @@ namespace TornJson.FactionData
 {
     public abstract class War
     {
-        [JsonProperty("defending_faction")]
-        public int DefendingFaction { get; set; }
+        [JsonProperty("defending_faction")] public int DefendingFaction { get; set; }
 
-        [JsonProperty("start_time")]
-        public int StartTime { get; set; }
+        [JsonProperty("start_time")] public int StartTime { get; set; }
     }
+
     public class RaidWar : War
     {
-        [JsonProperty("raiding_faction")]
-        public int AssaultingFaction { get; set; }
+        [JsonProperty("raiding_faction")] public int AssaultingFaction { get; set; }
 
-        [JsonProperty("raider_score")]
-        public int RaiderScore { get; set; }
+        [JsonProperty("raider_score")] public int RaiderScore { get; set; }
 
-        [JsonProperty("defender_score")]
-        public int DefenderScore { get; set; }
+        [JsonProperty("defender_score")] public int DefenderScore { get; set; }
     }
+
     public class TerritoryWar : War
     {
-        [JsonProperty("territory")]
-        public string Territory { get; set; }
+        [JsonProperty("territory")] public string Territory { get; set; }
 
-        [JsonProperty("assaulting_faction")]
-        public int AssaultingFaction { get; set; }
+        [JsonProperty("assaulting_faction")] public int AssaultingFaction { get; set; }
 
-        [JsonProperty("score")]
-        public int Score { get; set; }
+        [JsonProperty("score")] public int Score { get; set; }
 
-        [JsonProperty("required_score")]
-        public int RequiredScore { get; set; }
+        [JsonProperty("required_score")] public int RequiredScore { get; set; }
 
-        [JsonProperty("end_time")]
-        public int EndTime { get; set; }
+        [JsonProperty("end_time")] public int EndTime { get; set; }
     }
 }

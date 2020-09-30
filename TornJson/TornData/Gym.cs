@@ -23,31 +23,22 @@ namespace TornJson.TornData
 {
     public class Gym : ApiListItem
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("stage")]
-        public byte Stage { get; set; }
+        [JsonProperty("stage")] public byte Stage { get; set; }
 
-        [JsonProperty("cost")]
-        public int Cost { get; set; }
+        [JsonProperty("cost")] public int Cost { get; set; }
 
-        [JsonProperty("energy")]
-        public byte Energy { get; set; }
+        [JsonProperty("energy")] public byte Energy { get; set; }
 
-        [JsonProperty("strength")]
-        public float Strength { get; set; }
+        [JsonProperty("strength")] public float Strength { get; set; }
 
-        [JsonProperty("speed")]
-        public float Speed { get; set; }
+        [JsonProperty("speed")] public float Speed { get; set; }
 
-        [JsonProperty("defense")]
-        public float Defense { get; set; }
+        [JsonProperty("defense")] public float Defense { get; set; }
 
-        [JsonProperty("dexterity")]
-        public float Dexterity { get; set; }
+        [JsonProperty("dexterity")] public float Dexterity { get; set; }
 
-        [JsonProperty("note")]
-        public string Note { get; set; }
+        [JsonProperty("note")] public string Note { get; set; }
     }
 }

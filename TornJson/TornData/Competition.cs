@@ -23,40 +23,29 @@ namespace TornJson.TornData
 {
     public class Competition
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
-        
-        [JsonProperty("teams")]
-        public List<Team> Teams { get; private set; }
+        [JsonProperty("name")] public string Name { get; set; }
+
+        [JsonProperty("teams")] public List<Team> Teams { get; private set; }
     }
 
     public class Team
     {
-        [JsonProperty("position")]
-        public byte Position { get; set; }
-        
-        [JsonProperty("team")]
-        public string TeamCodename { get; set; }
-        
-        [JsonProperty("name")]
-        public string TeamName { get; set; }
-        
-        [JsonProperty("status")]
-        public string Status { get; set; }
-        
-        [JsonProperty("score")]
-        public short Score { get; set; }
-        
-        [JsonProperty("lives")]
-        public short Lives { get; set; }
-        
-        [JsonProperty("participants")]
-        public short Participants { get; set; }
-        
-        [JsonProperty("wins")]
-        public int Wins { get; set; }
-        
-        [JsonProperty("losses")]
-        public int Losses { get; set; }
+        [JsonProperty("position")] public byte Position { get; set; }
+
+        [JsonProperty("team")] public string TeamCodename { get; set; }
+
+        [JsonProperty("name")] public string TeamName { get; set; }
+
+        [JsonProperty("status")] public string Status { get; set; }
+
+        [JsonProperty("score")] public short Score { get; set; }
+
+        [JsonProperty("lives")] public short Lives { get; set; }
+
+        [JsonProperty("participants")] public short Participants { get; set; }
+
+        [JsonProperty("wins")] public int Wins { get; set; }
+
+        [JsonProperty("losses")] public int Losses { get; set; }
     }
 }

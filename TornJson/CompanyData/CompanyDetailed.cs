@@ -21,84 +21,84 @@ using Newtonsoft.Json;
 namespace TornJson.CompanyData
 {
     /// <summary>
-    /// Detailed company profile
+    ///     Detailed company profile
     /// </summary>
     public class CompanyDetailed
     {
         /// <summary>
-        /// The company id
+        ///     The company id
         /// </summary>
         [JsonProperty("ID")]
         public int CompanyId { get; set; }
 
         /// <summary>
-        /// The amount of money in the company bank
+        ///     The amount of money in the company bank
         /// </summary>
         [JsonProperty("company_bank")]
         public long CompanyBank { get; set; }
 
         /// <summary>
-        /// The % popularity of the company
+        ///     The % popularity of the company
         /// </summary>
         [JsonProperty("popularity")]
         public short Popularity { get; set; }
 
         /// <summary>
-        /// The % efficiency of the company
+        ///     The % efficiency of the company
         /// </summary>
         [JsonProperty("efficiency")]
         public short Efficiency { get; set; }
 
         /// <summary>
-        /// The % cleanliness of the company
+        ///     The % cleanliness of the company
         /// </summary>
         [JsonProperty("environment")]
         public short Environment { get; set; }
 
         /// <summary>
-        /// The number of trains the company has (20 max)
+        ///     The number of trains the company has (20 max)
         /// </summary>
         [JsonProperty("trains_available")]
         public short TrainsAvailable { get; set; }
 
         /// <summary>
-        /// The amount of money spent daily on advertising
+        ///     The amount of money spent daily on advertising
         /// </summary>
         [JsonProperty("advertising_budget")]
         public int AdvertisingBudget { get; set; }
 
         /// <summary>
-        /// The object which has the company upgrades that have been purchased
+        ///     The object which has the company upgrades that have been purchased
         /// </summary>
         [JsonProperty("upgrades")]
         public CompanyUpgrades Upgrades { get; set; }
     }
 
     /// <summary>
-    /// A class to hold the company upgrades
+    ///     A class to hold the company upgrades
     /// </summary>
     public class CompanyUpgrades
     {
         /// <summary>
-        /// The size of the company
+        ///     The size of the company
         /// </summary>
         [JsonProperty("company_size")]
         public byte CompanySize { get; set; }
 
         /// <summary>
-        /// The current size of the staff room
+        ///     The current size of the staff room
         /// </summary>
         [JsonProperty("staffroom_size")]
         public string StaffroomSize { get; set; }
 
         /// <summary>
-        /// The string representation  of the storeroom size for products the company sells
+        ///     The string representation  of the storeroom size for products the company sells
         /// </summary>
         [JsonProperty("storage_size")]
         public string StorageSize { get; set; }
 
         /// <summary>
-        /// The amount of products the company can store
+        ///     The amount of products the company can store
         /// </summary>
         [JsonProperty("storage_space")]
         public int StorageSpace { get; set; }

@@ -22,7 +22,6 @@ namespace TornJson.CommonData
 {
     public class ApiListItem
     {
-        [JsonProperty("id")]
-        public string Id { get; set; }
+        [JsonProperty("id")] public string Id { get; set; }
     }
 }

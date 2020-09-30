@@ -154,5 +154,4 @@ namespace TornJson.CommonData
         weaponexp,
         workstats
     }
-
 }

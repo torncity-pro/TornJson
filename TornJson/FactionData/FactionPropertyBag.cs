@@ -24,26 +24,19 @@ namespace TornJson.FactionData
 {
     public class FactionPropertyBag : PropertyBagBase
     {
-        [JsonProperty("ID")]
-        public int Id { get; set; }
+        [JsonProperty("ID")] public int Id { get; set; }
 
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("leader")]
-        public int Leader { get; set; }
+        [JsonProperty("leader")] public int Leader { get; set; }
 
-        [JsonProperty("co-leader")]
-        public int CoLeader { get; set; }
+        [JsonProperty("co-leader")] public int CoLeader { get; set; }
 
-        [JsonProperty("respect")]
-        public int Respect { get; set; }
+        [JsonProperty("respect")] public int Respect { get; set; }
 
-        [JsonProperty("age")]
-        public int Age { get; set; }
+        [JsonProperty("age")] public int Age { get; set; }
 
-        [JsonProperty("best_chain")]
-        public int BestChain { get; set; }
+        [JsonProperty("best_chain")] public int BestChain { get; set; }
 
         [JsonProperty("members")]
         [JsonConverter(typeof(TornListConverter<FactionMember>))]
@@ -56,35 +49,25 @@ namespace TornJson.FactionData
         [JsonConverter(typeof(TornListConverter<Territory>))]
         public List<Territory> Territory { get; private set; }
 
-        [JsonProperty("chain")]
-        public ActiveChain Chain { get; set; }
+        [JsonProperty("chain")] public ActiveChain Chain { get; set; }
 
-        [JsonProperty("faction_id")]
-        public int FactionId { get; set; }
+        [JsonProperty("faction_id")] public int FactionId { get; set; }
 
-        [JsonProperty("points")]
-        public int Points { get; set; }
+        [JsonProperty("points")] public int Points { get; set; }
 
-        [JsonProperty("money")]
-        public long Money { get; set; }
+        [JsonProperty("money")] public long Money { get; set; }
 
-        [JsonProperty("weapons")]
-        public List<LoanableArmoryItem> Weapons { get; private set; }
+        [JsonProperty("weapons")] public List<LoanableArmoryItem> Weapons { get; private set; }
 
-        [JsonProperty("armor")]
-        public List<LoanableArmoryItem> Armor { get; private set; }
+        [JsonProperty("armor")] public List<LoanableArmoryItem> Armor { get; private set; }
 
-        [JsonProperty("temporary")]
-        public List<ArmoryItem> TemporaryItems { get; private set; }
+        [JsonProperty("temporary")] public List<ArmoryItem> TemporaryItems { get; private set; }
 
-        [JsonProperty("medical")]
-        public List<ArmoryItem> MedicalItems { get; private set; }
+        [JsonProperty("medical")] public List<ArmoryItem> MedicalItems { get; private set; }
 
-        [JsonProperty("drugs")]
-        public List<ArmoryItem> Drugs { get; private set; }
+        [JsonProperty("drugs")] public List<ArmoryItem> Drugs { get; private set; }
 
-        [JsonProperty("boosters")]
-        public List<ArmoryItem> Boosters { get; private set; }
+        [JsonProperty("boosters")] public List<ArmoryItem> Boosters { get; private set; }
 
         [JsonProperty("mainnews")]
         [JsonConverter(typeof(TornListConverter<News>))]
@@ -126,8 +109,7 @@ namespace TornJson.FactionData
         [JsonConverter(typeof(TornListConverter<Upgrade>))]
         public List<Upgrade> Upgrades { get; private set; }
 
-        [JsonProperty("stats")]
-        public FactionStats Stats { get; set; }
+        [JsonProperty("stats")] public FactionStats Stats { get; set; }
 
         [JsonProperty("donations")]
         [JsonConverter(typeof(TornListConverter<UserBalance>))]
@@ -141,8 +123,7 @@ namespace TornJson.FactionData
         [JsonConverter(typeof(TornListConverter<FactionApplication>))]
         public List<FactionApplication> Applications { get; private set; }
 
-        [JsonProperty("cesium")]
-        public List<ArmoryItem> Cesium { get; private set; }
+        [JsonProperty("cesium")] public List<ArmoryItem> Cesium { get; private set; }
 
         //[JsonProperty("territory_wars")]
         //public List<TerritoryWar> TerritoryWars { get; set; }

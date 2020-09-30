@@ -23,43 +23,30 @@ namespace TornJson.UserData
 {
     public class BattleStats
     {
-        [JsonProperty("strength")]
-        public string Strength { get; set; }
+        [JsonProperty("strength")] public string Strength { get; set; }
 
-        [JsonProperty("speed")]
-        public string Speed { get; set; }
+        [JsonProperty("speed")] public string Speed { get; set; }
 
-        [JsonProperty("dexterity")]
-        public string Dexterity { get; set; }
+        [JsonProperty("dexterity")] public string Dexterity { get; set; }
 
-        [JsonProperty("defense")]
-        public string Defense { get; set; }
+        [JsonProperty("defense")] public string Defense { get; set; }
 
-        [JsonProperty("total")]
-        public string Total { get; set; }
+        [JsonProperty("total")] public string Total { get; set; }
 
-        [JsonProperty("strength_modifier")]
-        public int StrengthModifier { get; set; }
+        [JsonProperty("strength_modifier")] public int StrengthModifier { get; set; }
 
-        [JsonProperty("defense_modifier")]
-        public int DefenseModifier { get; set; }
+        [JsonProperty("defense_modifier")] public int DefenseModifier { get; set; }
 
-        [JsonProperty("speed_modifier")]
-        public int SpeedModifier { get; set; }
+        [JsonProperty("speed_modifier")] public int SpeedModifier { get; set; }
 
-        [JsonProperty("dexterity_modifier")]
-        public int DexterityModifier { get; set; }
+        [JsonProperty("dexterity_modifier")] public int DexterityModifier { get; set; }
 
-        [JsonProperty("strength_info")]
-        public List<string> StrengthInfo { get; private set; }
+        [JsonProperty("strength_info")] public List<string> StrengthInfo { get; private set; }
 
-        [JsonProperty("defense_info")]
-        public List<string> DefenseInfo { get; private set; }
+        [JsonProperty("defense_info")] public List<string> DefenseInfo { get; private set; }
 
-        [JsonProperty("speed_info")]
-        public List<string> SpeedInfo { get; private set; }
+        [JsonProperty("speed_info")] public List<string> SpeedInfo { get; private set; }
 
-        [JsonProperty("dexterity_info")]
-        public List<string> DexterityInfo { get; private set; }
+        [JsonProperty("dexterity_info")] public List<string> DexterityInfo { get; private set; }
     }
 }

@@ -16,68 +16,73 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
+using System;
+using System.Runtime.Serialization;
 using TornJson.CommonData;
 
 namespace TornJson.Exceptions
 {
-    using System;
-    using System.Runtime.Serialization;
-
     /// <summary>
-    /// An extension of exception specific to exceptions thrown by the Torn API
+    ///     An extension of exception specific to exceptions thrown by the Torn API
     /// </summary>
     [Serializable]
     public class ApiException : Exception
     {
         /// <summary>
-        /// Gets the error object used to construct the error
+        ///     Default constructor
         /// </summary>
-        public TornExceptionInfo TornErrorInfo { get; private set; }
+        public ApiException()
+        {
+        }
 
         /// <summary>
-        /// Default constructor
-        /// </summary>
-        public ApiException() { }
-
-        /// <summary>
-        /// Constructor
+        ///     Constructor
         /// </summary>
         /// <param name="error">Torn API Error info object</param>
-        public ApiException(TornExceptionInfo error) : base(error?.ErrorMessage ?? throw new ArgumentNullException(nameof(error)))
+        public ApiException(TornExceptionInfo error) : base(error?.ErrorMessage ??
+                                                            throw new ArgumentNullException(nameof(error)))
         {
             TornErrorInfo = error;
         }
 
         /// <summary>
-        /// Constructor
+        ///     Constructor
         /// </summary>
         /// <param name="message">Exception message</param>
-        public ApiException(string message) : base(message) { }
+        public ApiException(string message) : base(message)
+        {
+        }
 
         /// <summary>
-        /// Constructor
+        ///     Constructor
         /// </summary>
         /// <param name="message">Exception message</param>
         /// <param name="inner">Inner exception</param>
-        public ApiException(string message, Exception inner) : base(message, inner) { }
+        public ApiException(string message, Exception inner) : base(message, inner)
+        {
+        }
 
         /// <summary>
-        /// Constructor
+        ///     Constructor
         /// </summary>
         /// <param name="info">Serialization info</param>
         /// <param name="context">Context</param>
-        protected ApiException(SerializationInfo info, StreamingContext context) : base(info, context) { }
+        protected ApiException(SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+        }
 
         /// <summary>
-        /// Determines when a Torn Exception is retryable
+        ///     Gets the error object used to construct the error
+        /// </summary>
+        public TornExceptionInfo TornErrorInfo { get; private set; }
+
+        /// <summary>
+        ///     Determines when a Torn Exception is retryable
         /// </summary>
         /// <returns>True if it is retryable</returns>
         public bool IsRetryable()
         {
-            if (TornErrorInfo == null)
-            {
-                return false;
-            }
+            if (TornErrorInfo == null) return false;
 
             return TornErrorInfo.ErrorCode switch
             {
@@ -90,16 +95,13 @@ namespace TornJson.Exceptions
         }
 
         /// <summary>
-        /// Converts the API return object with error info into an exception
+        ///     Converts the API return object with error info into an exception
         /// </summary>
         /// <param name="ex">The error information from the api call</param>
         /// <returns>The concrete exception class for the specific error</returns>
         public static ApiException CreateExceptionFromExceptionInfo(TornExceptionInfo ex)
         {
-            if (ex == null)
-            {
-                throw new ArgumentNullException(nameof(ex));
-            }
+            if (ex == null) throw new ArgumentNullException(nameof(ex));
 
             return ex.ErrorCode switch
             {

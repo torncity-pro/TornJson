@@ -22,48 +22,48 @@ using TornJson.CommonData;
 namespace TornJson.CompanyData
 {
     /// <summary>
-    /// A company employee
+    ///     A company employee
     /// </summary>
     public class CompanyEmployee : ApiListItem
     {
         /// <summary>
-        /// The position of the employee
+        ///     The position of the employee
         /// </summary>
         [JsonProperty("position")]
         public string Position { get; set; }
 
         /// <summary>
-        /// The number of days the employee has been with the company
+        ///     The number of days the employee has been with the company
         /// </summary>
         [JsonProperty("days_employed")]
         public short DaysEmployed { get; set; }
 
         /// <summary>
-        /// The employees wage $25,000,000 max
+        ///     The employees wage $25,000,000 max
         /// </summary>
         [JsonProperty("wage")]
         public int Wage { get; set; }
 
         /// <summary>
-        /// The employees effectiveness out of 5
+        ///     The employees effectiveness out of 5
         /// </summary>
         [JsonProperty("effectiveness")]
         public byte Effectiveness { get; set; }
 
         /// <summary>
-        /// The employees manual labor stat
+        ///     The employees manual labor stat
         /// </summary>
         [JsonProperty("manual_labor")]
         public int ManualLabor { get; set; }
 
         /// <summary>
-        /// The employees intelligence stat
+        ///     The employees intelligence stat
         /// </summary>
         [JsonProperty("intelligence")]
         public int Intelligence { get; set; }
 
         /// <summary>
-        /// The employees endurance stat
+        ///     The employees endurance stat
         /// </summary>
         [JsonProperty("endurance")]
         public int Endurance { get; set; }

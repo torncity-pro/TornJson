@@ -22,16 +22,12 @@ namespace TornJson.CommonData
 {
     public class TerritoryWar : ApiListItem
     {
-        [JsonProperty("assaulting_faction")]
-        public int AssaultingFaction { get; set; }
+        [JsonProperty("assaulting_faction")] public int AssaultingFaction { get; set; }
 
-        [JsonProperty("defending_faction")]
-        public int DefendingFaction { get; set; }
+        [JsonProperty("defending_faction")] public int DefendingFaction { get; set; }
 
-        [JsonProperty("started")]
-        public int StartTime { get; set; }
+        [JsonProperty("started")] public int StartTime { get; set; }
 
-        [JsonProperty("ends")]
-        public int EndTime { get; set; }
+        [JsonProperty("ends")] public int EndTime { get; set; }
     }
 }

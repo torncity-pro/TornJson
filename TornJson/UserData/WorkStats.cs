@@ -21,17 +21,14 @@ using Newtonsoft.Json;
 namespace TornJson.UserData
 {
     /// <summary>
-    /// Represents a set of working stats
+    ///     Represents a set of working stats
     /// </summary>
     public class WorkStats
     {
-        [JsonProperty("manual_labor")]
-        public int ManualLabor { get; set; }
+        [JsonProperty("manual_labor")] public int ManualLabor { get; set; }
 
-        [JsonProperty("intelligence")]
-        public int Intelligence { get; set; }
+        [JsonProperty("intelligence")] public int Intelligence { get; set; }
 
-        [JsonProperty("endurance")]
-        public int Endurance { get; set; }
+        [JsonProperty("endurance")] public int Endurance { get; set; }
     }
 }

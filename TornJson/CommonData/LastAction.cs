@@ -22,13 +22,10 @@ namespace TornJson.CommonData
 {
     public class LastAction
     {
-        [JsonProperty("status")]
-        public string Status { get; set; }
+        [JsonProperty("status")] public string Status { get; set; }
 
-        [JsonProperty("timestamp")]
-        public int Timestamp { get; set; }
+        [JsonProperty("timestamp")] public int Timestamp { get; set; }
 
-        [JsonProperty("relative")]
-        public string Relative { get; set; }
+        [JsonProperty("relative")] public string Relative { get; set; }
     }
 }

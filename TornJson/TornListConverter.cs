@@ -16,38 +16,32 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
+using System;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 using TornJson.CommonData;
 
 namespace TornJson
 {
-    using Newtonsoft.Json;
-    using System;
-    using System.Collections.Generic;
-
     /// <summary>
-    /// Defines a converter that can convert those weird api results into a list
+    ///     Defines a converter that can convert those weird api results into a list
     /// </summary>
     /// <typeparam name="T">The base object of the weird list to be used in the new list</typeparam>
     public class TornListConverter<T> : JsonConverter<List<T>> where T : ApiListItem, new()
     {
-        public override List<T> ReadJson(JsonReader reader, Type objectType, List<T> existingValue, bool hasExistingValue, JsonSerializer serializer)
+        public override List<T> ReadJson(JsonReader reader, Type objectType, List<T> existingValue,
+            bool hasExistingValue, JsonSerializer serializer)
         {
-            if (reader == null)
-            {
-                throw new ArgumentNullException(nameof(reader));
-            }
+            if (reader == null) throw new ArgumentNullException(nameof(reader));
 
-            if (serializer == null)
-            {
-                throw new ArgumentNullException(nameof(serializer));
-            }
+            if (serializer == null) throw new ArgumentNullException(nameof(serializer));
 
             existingValue ??= new List<T>();
 
             var startingDepth = reader.Depth;
             while (reader.Read() && reader.Depth > startingDepth)
             {
-                var entry = new T { Id = (string) reader.Value };
+                var entry = new T {Id = (string) reader.Value};
                 reader.Read();
                 serializer.Populate(reader, entry);
                 existingValue.Add(entry);
@@ -58,20 +52,11 @@ namespace TornJson
 
         public override void WriteJson(JsonWriter writer, List<T> value, JsonSerializer serializer)
         {
-            if (writer == null)
-            {
-                throw new ArgumentNullException(nameof(writer));
-            }
+            if (writer == null) throw new ArgumentNullException(nameof(writer));
 
-            if (serializer == null)
-            {
-                throw new ArgumentNullException(nameof(serializer));
-            }
+            if (serializer == null) throw new ArgumentNullException(nameof(serializer));
 
-            if (value == null)
-            {
-                throw new ArgumentNullException(nameof(value));
-            }
+            if (value == null) throw new ArgumentNullException(nameof(value));
 
             writer.WriteStartObject();
             foreach (var name in value)
@@ -79,6 +64,7 @@ namespace TornJson
                 writer.WritePropertyName(name.Id);
                 serializer.Serialize(writer, name);
             }
+
             writer.WriteEndObject();
         }
     }

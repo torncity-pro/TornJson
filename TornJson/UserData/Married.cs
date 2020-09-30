@@ -22,13 +22,10 @@ namespace TornJson.UserData
 {
     public class Married
     {
-        [JsonProperty("spouse_id")]
-        public int SpouseId { get; set; }
+        [JsonProperty("spouse_id")] public int SpouseId { get; set; }
 
-        [JsonProperty("spouse_name")]
-        public string SpouseName { get; set; }
+        [JsonProperty("spouse_name")] public string SpouseName { get; set; }
 
-        [JsonProperty("duration")]
-        public int Duration { get; set; }
+        [JsonProperty("duration")] public int Duration { get; set; }
     }
 }

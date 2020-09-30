@@ -37,10 +37,8 @@ namespace TornJson.CommonData
      */
     public class TornExceptionInfo
     {
-        [JsonProperty("code")]
-        public short ErrorCode { get; set; }
+        [JsonProperty("code")] public short ErrorCode { get; set; }
 
-        [JsonProperty("error")]
-        public string ErrorMessage { get; set; }
+        [JsonProperty("error")] public string ErrorMessage { get; set; }
     }
 }

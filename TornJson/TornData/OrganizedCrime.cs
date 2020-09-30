@@ -16,6 +16,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
+using System;
 using Newtonsoft.Json;
 using TornJson.CommonData;
 
@@ -23,27 +24,20 @@ namespace TornJson.TornData
 {
     public class OrganizedCrime : ApiListItem
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("members")]
-        public byte Members { get; set; }
+        [JsonProperty("members")] public byte Members { get; set; }
 
-        [JsonProperty("time")]
-        public short TimeInHours { get; set; }
+        [JsonProperty("time")] public short TimeInHours { get; set; }
 
-        public System.TimeSpan Time => System.TimeSpan.FromHours(TimeInHours);
+        public TimeSpan Time => TimeSpan.FromHours(TimeInHours);
 
-        [JsonProperty("min_cash")]
-        public int MinCash { get; set; }
+        [JsonProperty("min_cash")] public int MinCash { get; set; }
 
-        [JsonProperty("max_cash")]
-        public int MaxCash { get; set; }
+        [JsonProperty("max_cash")] public int MaxCash { get; set; }
 
-        [JsonProperty("min_respect")]
-        public short MinRespect { get; set; }
+        [JsonProperty("min_respect")] public short MinRespect { get; set; }
 
-        [JsonProperty("max_respect")]
-        public short MaxRespect { get; set; }
+        [JsonProperty("max_respect")] public short MaxRespect { get; set; }
     }
 }

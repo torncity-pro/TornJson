@@ -22,22 +22,16 @@ namespace TornJson.FactionData
 {
     public class ActiveChain
     {
-        [JsonProperty("current")]
-        public int Current { get; set; }
+        [JsonProperty("current")] public int Current { get; set; }
 
-        [JsonProperty("max")]
-        public int Max { get; set; }
+        [JsonProperty("max")] public int Max { get; set; }
 
-        [JsonProperty("timeout")]
-        public int Timeout { get; set; }
+        [JsonProperty("timeout")] public int Timeout { get; set; }
 
-        [JsonProperty("modifier")]
-        public int Modifier { get; set; }
+        [JsonProperty("modifier")] public int Modifier { get; set; }
 
-        [JsonProperty("cooldown")]
-        public int Cooldown { get; set; }
+        [JsonProperty("cooldown")] public int Cooldown { get; set; }
 
-        [JsonProperty("start")]
-        public int Start { get; set; }
+        [JsonProperty("start")] public int Start { get; set; }
     }
 }

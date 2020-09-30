@@ -19,12 +19,17 @@
 namespace TornJson.Fields
 {
     /// <summary>
-    /// Meant to be inherited to specify string value constants to give to the selection field in the api
+    ///     Meant to be inherited to specify string value constants to give to the selection field in the api
     /// </summary>
     public abstract class ApiField
     {
         /// <summary>
-        /// Protected constructor for the inheriting classes to use
+        ///     The string representation of the field to query
+        /// </summary>
+        internal readonly string fieldName;
+
+        /// <summary>
+        ///     Protected constructor for the inheriting classes to use
         /// </summary>
         /// <param name="fieldName"></param>
         protected ApiField(string fieldName)
@@ -33,12 +38,7 @@ namespace TornJson.Fields
         }
 
         /// <summary>
-        /// The string representation of the field to query
-        /// </summary>
-        internal readonly string fieldName;
-
-        /// <summary>
-        /// The accessor for the fieldName
+        ///     The accessor for the fieldName
         /// </summary>
         public string FieldName => fieldName;
     }

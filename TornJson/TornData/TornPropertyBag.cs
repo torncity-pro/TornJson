@@ -28,8 +28,7 @@ namespace TornJson.TornData
         [JsonConverter(typeof(TornListConverter<Stock>))]
         public List<Stock> Stocks { get; private set; }
 
-        [JsonProperty("stats")]
-        public Stats CityStats { get; set; }
+        [JsonProperty("stats")] public Stats CityStats { get; set; }
 
         [JsonProperty("honors")]
         [JsonConverter(typeof(TornListConverter<Honor>))]
@@ -75,11 +74,9 @@ namespace TornJson.TornData
         [JsonConverter(typeof(TornListConverter<Racket>))]
         public List<Racket> Rackets { get; private set; }
 
-        [JsonProperty("bank")]
-        public BankRates BankRates { get; set; }
+        [JsonProperty("bank")] public BankRates BankRates { get; set; }
 
-        [JsonProperty("pawnshop")]
-        public PawnShop PawnShop { get; set; }
+        [JsonProperty("pawnshop")] public PawnShop PawnShop { get; set; }
 
         [JsonProperty("raids")]
         [JsonConverter(typeof(TornListConverter<Raid>))]
@@ -88,8 +85,7 @@ namespace TornJson.TornData
         [JsonProperty("territorywars")]
         [JsonConverter(typeof(TornListConverter<TerritoryWar>))]
         public List<TerritoryWar> TerritoryWars { get; private set; }
-        
-        [JsonProperty("competition")]
-        public Competition Competition { get; set; }
+
+        [JsonProperty("competition")] public Competition Competition { get; set; }
     }
 }

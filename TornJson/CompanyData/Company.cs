@@ -25,67 +25,67 @@ namespace TornJson.CompanyData
     public class Company
     {
         /// <summary>
-        /// The id that represents this company in url lookups
+        ///     The id that represents this company in url lookups
         /// </summary>
         [JsonProperty("ID")]
         public int CompanyId { get; set; }
 
         /// <summary>
-        /// The type of company
+        ///     The type of company
         /// </summary>
         [JsonProperty("company_type")]
         public int CompanyType { get; set; }
 
         /// <summary>
-        /// The star rating out of 10 for the company
+        ///     The star rating out of 10 for the company
         /// </summary>
         [JsonProperty("rating")]
         public int Rating { get; set; }
 
         /// <summary>
-        /// The name of the company
+        ///     The name of the company
         /// </summary>
         [JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
-        /// The id of the player who runs the company
+        ///     The id of the player who runs the company
         /// </summary>
         [JsonProperty("director")]
         public int Director { get; set; }
 
         /// <summary>
-        /// The daily profit the company earns
+        ///     The daily profit the company earns
         /// </summary>
         [JsonProperty("daily_income")]
         public long DailyProfit { get; set; }
 
         /// <summary>
-        /// The weekly profits the company earns
+        ///     The weekly profits the company earns
         /// </summary>
         [JsonProperty("weekly_income")]
         public long WeeklyProfit { get; set; }
 
         /// <summary>
-        /// The number of daily customers
+        ///     The number of daily customers
         /// </summary>
         [JsonProperty("daily_customers")]
         public int DailyCustomers { get; set; }
 
         /// <summary>
-        /// The number of weekly customers
+        ///     The number of weekly customers
         /// </summary>
         [JsonProperty("weekly_customers")]
         public int WeeklyCustomers { get; set; }
 
         /// <summary>
-        /// How old the company is
+        ///     How old the company is
         /// </summary>
         [JsonProperty("days_old")]
         public int DaysOld { get; set; }
 
         /// <summary>
-        /// A list of employees in the company
+        ///     A list of employees in the company
         /// </summary>
         [JsonProperty("employees")]
         [JsonConverter(typeof(TornListConverter<Employee>))]
@@ -93,36 +93,36 @@ namespace TornJson.CompanyData
     }
 
     /// <summary>
-    /// An employee in the company
+    ///     An employee in the company
     /// </summary>
     public class Employee : ApiListItem
     {
         /// <summary>
-        /// The name of the employee
+        ///     The name of the employee
         /// </summary>
         [JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
-        /// The name of the position the employee has
+        ///     The name of the position the employee has
         /// </summary>
         [JsonProperty("position")]
         public string Position { get; set; }
 
         /// <summary>
-        /// The number of days the employee has been with the company
+        ///     The number of days the employee has been with the company
         /// </summary>
         [JsonProperty("days_in_company")]
         public int DaysInCompany { get; set; }
 
         /// <summary>
-        /// Gets or sets the last action of the player
+        ///     Gets or sets the last action of the player
         /// </summary>
         [JsonProperty("last_action")]
         public LastAction LastAction { get; set; }
 
         /// <summary>
-        /// Gets or sets the status of the player
+        ///     Gets or sets the status of the player
         /// </summary>
         [JsonProperty("status")]
         public Status Status { get; set; }

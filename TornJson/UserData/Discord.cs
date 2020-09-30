@@ -22,10 +22,8 @@ namespace TornJson.UserData
 {
     public class Discord
     {
-        [JsonProperty("userID")]
-        public int UserId { get; set; }
+        [JsonProperty("userID")] public int UserId { get; set; }
 
-        [JsonProperty("discordID")]
-        public string DiscordId { get; set; }
+        [JsonProperty("discordID")] public string DiscordId { get; set; }
     }
 }

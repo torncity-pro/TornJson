@@ -22,29 +22,21 @@ namespace TornJson.FactionData
 {
     public class ArmoryItem
     {
-        [JsonProperty("ID")]
-        public int Id { get; set; }
+        [JsonProperty("ID")] public int Id { get; set; }
 
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("type")]
-        public string Type { get; set; }
+        [JsonProperty("type")] public string Type { get; set; }
 
-        [JsonProperty("quantity")]
-        public int Quantity { get; set; }
+        [JsonProperty("quantity")] public int Quantity { get; set; }
     }
 
     public class LoanableArmoryItem : ArmoryItem
     {
+        [JsonProperty("available")] public int Available { get; set; }
 
-        [JsonProperty("available")]
-        public int Available { get; set; }
+        [JsonProperty("loaned")] public int Loaned { get; set; }
 
-        [JsonProperty("loaned")]
-        public int Loaned { get; set; }
-
-        [JsonProperty("loaned_to")]
-        public string LoanedTo { get; set; }
+        [JsonProperty("loaned_to")] public string LoanedTo { get; set; }
     }
 }

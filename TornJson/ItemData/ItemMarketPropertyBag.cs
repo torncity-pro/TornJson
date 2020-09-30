@@ -23,25 +23,25 @@ using TornJson.CommonData;
 namespace TornJson.ItemData
 {
     /// <summary>
-    /// A root level object to hold all the object values returned by the api
+    ///     A root level object to hold all the object values returned by the api
     /// </summary>
     public class ItemMarketPropertyBag : PropertyBagBase
     {
         /// <summary>
-        /// A list of points for sale on the market
+        ///     A list of points for sale on the market
         /// </summary>
         [JsonProperty("pointsmarket")]
         [JsonConverter(typeof(TornListConverter<PointsListing>))]
         public List<PointsListing> PointsMarket { get; private set; }
 
         /// <summary>
-        /// A list of the item for sale in bazaars
+        ///     A list of the item for sale in bazaars
         /// </summary>
         [JsonProperty("bazaar")]
         public List<MarketListing> Bazaars { get; private set; }
 
         /// <summary>
-        /// A list of the item for sale on the item market
+        ///     A list of the item for sale on the item market
         /// </summary>
         [JsonProperty("itemmarket")]
         public List<MarketListing> ItemMarket { get; private set; }

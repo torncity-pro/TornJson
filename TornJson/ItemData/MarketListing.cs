@@ -22,30 +22,30 @@ using TornJson.CommonData;
 namespace TornJson.ItemData
 {
     /// <summary>
-    /// A listing in a market
+    ///     A listing in a market
     /// </summary>
     public class MarketListing : ApiListItem
     {
         /// <summary>
-        /// The cost of them item
+        ///     The cost of them item
         /// </summary>
         [JsonProperty("cost")]
         public long Cost { get; set; }
 
         /// <summary>
-        /// The quantity of the item for sale
+        ///     The quantity of the item for sale
         /// </summary>
         [JsonProperty("quantity")]
         public int Quantity { get; set; }
     }
 
     /// <summary>
-    /// A subclass which is specific to points on the market
+    ///     A subclass which is specific to points on the market
     /// </summary>
     public class PointsListing : MarketListing
     {
         /// <summary>
-        /// Only applies to PointsMarket and represents the total cost to buy
+        ///     Only applies to PointsMarket and represents the total cost to buy
         /// </summary>
         [JsonProperty("total_cost")]
         public int TotalCost { get; set; }

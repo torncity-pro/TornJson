@@ -23,38 +23,38 @@ using TornJson.CommonData;
 namespace TornJson.CompanyData
 {
     /// <summary>
-    /// A super object which has deserialization for all fields returned from the api
+    ///     A super object which has deserialization for all fields returned from the api
     /// </summary>
     public class CompanyPropertyBag : PropertyBagBase
     {
         /// <summary>
-        /// The company object (public)
+        ///     The company object (public)
         /// </summary>
         [JsonProperty("company")]
         public Company Company { get; set; }
 
         /// <summary>
-        /// The detailed company object
+        ///     The detailed company object
         /// </summary>
         [JsonProperty("company_detailed")]
         public CompanyDetailed CompanyDetailed { get; set; }
 
         /// <summary>
-        /// The current item stock of the company
+        ///     The current item stock of the company
         /// </summary>
         [JsonProperty("company_stock")]
         [JsonConverter(typeof(TornListConverter<CompanyStock>))]
         public List<CompanyStock> CompanyStock { get; private set; }
 
         /// <summary>
-        /// The company employees
+        ///     The company employees
         /// </summary>
         [JsonProperty("company_employees")]
         [JsonConverter(typeof(TornListConverter<CompanyEmployee>))]
         public List<CompanyEmployee> CompanyEmployees { get; private set; }
 
         /// <summary>
-        /// The news for the company
+        ///     The news for the company
         /// </summary>
         [JsonProperty("news")]
         [JsonConverter(typeof(TornListConverter<News>))]

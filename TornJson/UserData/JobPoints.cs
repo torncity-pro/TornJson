@@ -24,35 +24,27 @@ namespace TornJson.UserData
 {
     public class CityJobPoints
     {
-        [JsonProperty("medical")]
-        public int Medical { get; set; }
+        [JsonProperty("medical")] public int Medical { get; set; }
 
-        [JsonProperty("casino")]
-        public int Casino { get; set; }
+        [JsonProperty("casino")] public int Casino { get; set; }
 
-        [JsonProperty("education")]
-        public int Education { get; set; }
+        [JsonProperty("education")] public int Education { get; set; }
 
-        [JsonProperty("law")]
-        public int Law { get; set; }
+        [JsonProperty("law")] public int Law { get; set; }
 
-        [JsonProperty("grocer")]
-        public int Grocer { get; set; }
+        [JsonProperty("grocer")] public int Grocer { get; set; }
     }
 
     public class CompanyJobPoints : ApiListItem
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("jobpoints")]
-        public int JobPoints { get; set; }
+        [JsonProperty("jobpoints")] public int JobPoints { get; set; }
     }
 
     public class JobPoints
     {
-        [JsonProperty("jobs")]
-        public CityJobPoints Jobs { get; set; }
+        [JsonProperty("jobs")] public CityJobPoints Jobs { get; set; }
 
         [JsonProperty("companies")]
         [JsonConverter(typeof(TornListConverter<CompanyJobPoints>))]

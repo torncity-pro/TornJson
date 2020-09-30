@@ -23,70 +23,50 @@ namespace TornJson.CommonData
 {
     public class Stock : ApiListItem
     {
-        [JsonProperty("stock_id")]
-        public int StockId { get; set; }
+        [JsonProperty("stock_id")] public int StockId { get; set; }
 
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("acronym")]
-        public string Acronym { get; set; }
+        [JsonProperty("acronym")] public string Acronym { get; set; }
 
-        [JsonProperty("director")]
-        public string Director { get; set; }
+        [JsonProperty("director")] public string Director { get; set; }
 
-        [JsonProperty("current_price")]
-        public float CurrentPrice { get; set; }
+        [JsonProperty("current_price")] public float CurrentPrice { get; set; }
 
-        [JsonProperty("market_cap")]
-        public long MarketCap { get; set; }
+        [JsonProperty("market_cap")] public long MarketCap { get; set; }
 
-        [JsonProperty("total_shares")]
-        public long TotalShares { get; set; }
+        [JsonProperty("total_shares")] public long TotalShares { get; set; }
 
-        [JsonProperty("available_shares")]
-        public long AvailableShares { get; set; }
+        [JsonProperty("available_shares")] public long AvailableShares { get; set; }
 
-        [JsonProperty("forecast")]
-        public string Forecast { get; set; }
+        [JsonProperty("forecast")] public string Forecast { get; set; }
 
-        [JsonProperty("demand")]
-        public string Demand { get; set; }
+        [JsonProperty("demand")] public string Demand { get; set; }
 
-        [JsonProperty("benefit")]
-        public BenefitBlock Benefit { get; set; }
+        [JsonProperty("benefit")] public BenefitBlock Benefit { get; set; }
 
-        [JsonProperty("history")]
-        public List<History> History { get; private set; }
+        [JsonProperty("history")] public List<History> History { get; private set; }
     }
 
     public class History
     {
-        [JsonProperty("timestamp")]
-        public int Timestamp { get; set; }
+        [JsonProperty("timestamp")] public int Timestamp { get; set; }
 
-        [JsonProperty("display_time")]
-        public string DisplayTime { get; set; }
+        [JsonProperty("display_time")] public string DisplayTime { get; set; }
 
-        [JsonProperty("price")]
-        public float Price { get; set; }
+        [JsonProperty("price")] public float Price { get; set; }
 
-        [JsonProperty("change")]
-        public float Change { get; set; }
+        [JsonProperty("change")] public float Change { get; set; }
 
-        [JsonProperty("available_shares")]
-        public long AvailableShares { get; set; }
+        [JsonProperty("available_shares")] public long AvailableShares { get; set; }
 
-        [JsonProperty("current_shares")]
-        public long CurrentShares { get; set; }
+        [JsonProperty("current_shares")] public long CurrentShares { get; set; }
     }
 
     public class BenefitBlock
     {
-        [JsonProperty("requirement")]
-        public int Requirement { get; set; }
+        [JsonProperty("requirement")] public int Requirement { get; set; }
 
-        [JsonProperty("description")]
-        public string Description { get; set; }
+        [JsonProperty("description")] public string Description { get; set; }
     }
 }

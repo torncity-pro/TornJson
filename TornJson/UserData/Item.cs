@@ -22,37 +22,29 @@ namespace TornJson.UserData
 {
     public abstract class UserItem
     {
-        [JsonProperty("ID")]
-        public int Id { get; set; }
+        [JsonProperty("ID")] public int Id { get; set; }
 
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("type")]
-        public string Type { get; set; }
+        [JsonProperty("type")] public string Type { get; set; }
 
-        [JsonProperty("quantity")]
-        public int Quantity { get; set; }
+        [JsonProperty("quantity")] public int Quantity { get; set; }
 
-        [JsonProperty("market_price")]
-        public int MarketPrice { get; set; }
+        [JsonProperty("market_price")] public int MarketPrice { get; set; }
     }
 
     public class BazaarItem : UserItem
     {
-        [JsonProperty("price")]
-        public int Price { get; set; }
+        [JsonProperty("price")] public int Price { get; set; }
     }
 
     public class InventoryItem : UserItem
     {
-        [JsonProperty("equipped")]
-        public bool Equipped { get; set; }
+        [JsonProperty("equipped")] public bool Equipped { get; set; }
     }
 
     public class DisplayCaseItem : UserItem
     {
-        [JsonProperty("circulation")]
-        public int Circulation { get; set; }
+        [JsonProperty("circulation")] public int Circulation { get; set; }
     }
 }

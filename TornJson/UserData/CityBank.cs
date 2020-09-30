@@ -22,10 +22,8 @@ namespace TornJson.UserData
 {
     public class CityBank
     {
-        [JsonProperty("amount")]
-        public int Amount { get; set; }
+        [JsonProperty("amount")] public int Amount { get; set; }
 
-        [JsonProperty("time_left")]
-        public int TimeLeft { get; set; }
+        [JsonProperty("time_left")] public int TimeLeft { get; set; }
     }
 }

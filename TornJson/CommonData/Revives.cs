@@ -22,40 +22,30 @@ namespace TornJson.CommonData
 {
     public class Revive : ApiListItem
     {
-        [JsonProperty("timestamp")]
-        public int Timestamp { get; set; }
+        [JsonProperty("timestamp")] public int Timestamp { get; set; }
 
-        [JsonProperty("reviver_id")]
-        public int ReviverId { get; set; }
+        [JsonProperty("reviver_id")] public int ReviverId { get; set; }
 
-        [JsonProperty("reviver_faction")]
-        public int ReviverFaction { get; set; }
+        [JsonProperty("reviver_faction")] public int ReviverFaction { get; set; }
 
-        [JsonProperty("target_id")]
-        public int TargetId { get; set; }
+        [JsonProperty("target_id")] public int TargetId { get; set; }
 
-        [JsonProperty("target_faction")]
-        public int TargetFaction { get; set; }
+        [JsonProperty("target_faction")] public int TargetFaction { get; set; }
     }
 
     public class ReviveDetailed : Revive
     {
-        [JsonProperty("reviver_name")]
-        public string ReviverName { get; set; }
+        [JsonProperty("reviver_name")] public string ReviverName { get; set; }
 
-        [JsonProperty("reviver_factionname")]
-        public string ReviverFactionName { get; set; }
+        [JsonProperty("reviver_factionname")] public string ReviverFactionName { get; set; }
 
-        [JsonProperty("target_name")]
-        public string TargetName { get; set; }
+        [JsonProperty("target_name")] public string TargetName { get; set; }
 
-        [JsonProperty("target_factionname")]
-        public string TargetFactionName { get; set; }
+        [JsonProperty("target_factionname")] public string TargetFactionName { get; set; }
 
         [JsonProperty("target_hospital_reason")]
         public string TargetHospitalReason { get; set; }
 
-        [JsonProperty("target_last_action")]
-        public LastAction TargetLastAction { get; set; }
+        [JsonProperty("target_last_action")] public LastAction TargetLastAction { get; set; }
     }
 }

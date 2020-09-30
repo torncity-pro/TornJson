@@ -22,10 +22,8 @@ namespace TornJson.UserData
 {
     public class States
     {
-        [JsonProperty("hospital_timestamp")]
-        public int HospitalTimestamp { get; set; }
+        [JsonProperty("hospital_timestamp")] public int HospitalTimestamp { get; set; }
 
-        [JsonProperty("jail_timestamp")]
-        public int JailTimestamp { get; set; }
+        [JsonProperty("jail_timestamp")] public int JailTimestamp { get; set; }
     }
 }

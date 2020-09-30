@@ -23,13 +23,10 @@ namespace TornJson.FactionData
 {
     public class UserBalance : ApiListItem
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("money_balance")]
-        public int MoneyBalance { get; set; }
+        [JsonProperty("money_balance")] public int MoneyBalance { get; set; }
 
-        [JsonProperty("points_balance")]
-        public int PointsBalance { get; set; }
+        [JsonProperty("points_balance")] public int PointsBalance { get; set; }
     }
 }

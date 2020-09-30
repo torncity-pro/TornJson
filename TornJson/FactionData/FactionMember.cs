@@ -23,16 +23,12 @@ namespace TornJson.FactionData
 {
     public class FactionMember : ApiListItem
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("days_in_faction")]
-        public int DaysInFaction { get; set; }
+        [JsonProperty("days_in_faction")] public int DaysInFaction { get; set; }
 
-        [JsonProperty("last_action")]
-        public LastAction LastAction { get; set; }
+        [JsonProperty("last_action")] public LastAction LastAction { get; set; }
 
-        [JsonProperty("status")]
-        public Status Status { get; set; }
+        [JsonProperty("status")] public Status Status { get; set; }
     }
 }

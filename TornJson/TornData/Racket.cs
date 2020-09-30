@@ -16,6 +16,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
+using System;
 using Newtonsoft.Json;
 using TornJson.CommonData;
 
@@ -23,26 +24,20 @@ namespace TornJson.TornData
 {
     public class Racket : ApiListItem
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("level")]
-        public byte Level { get; set; }
+        [JsonProperty("level")] public byte Level { get; set; }
 
-        [JsonProperty("reward")]
-        public string Reward { get; set; }
+        [JsonProperty("reward")] public string Reward { get; set; }
 
-        [JsonProperty("created")]
-        public int CreatedTimestamp { get; set; }
+        [JsonProperty("created")] public int CreatedTimestamp { get; set; }
 
-        public System.DateTime CreatedDateTime => System.DateTime.UnixEpoch.AddSeconds(CreatedTimestamp);
+        public DateTime CreatedDateTime => DateTime.UnixEpoch.AddSeconds(CreatedTimestamp);
 
-        [JsonProperty("changed")]
-        public int ChangedTimestamp { get; set; }
+        [JsonProperty("changed")] public int ChangedTimestamp { get; set; }
 
-        public System.DateTime ChangedDateTime => System.DateTime.UnixEpoch.AddSeconds(ChangedTimestamp);
+        public DateTime ChangedDateTime => DateTime.UnixEpoch.AddSeconds(ChangedTimestamp);
 
-        [JsonProperty("faction")]
-        public int Faction { get; set; }
+        [JsonProperty("faction")] public int Faction { get; set; }
     }
 }

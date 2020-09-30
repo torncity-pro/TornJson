@@ -20,8 +20,6 @@ namespace TornJson.Fields
 {
     public class UserField : ApiField
     {
-        protected UserField(string fieldName) : base(fieldName) { }
-
         public static readonly UserField Networth = new UserField("money,networth");
         public static readonly UserField Bazaar = new UserField("bazaar");
         public static readonly UserField Competition = new UserField("competition");
@@ -60,5 +58,9 @@ namespace TornJson.Fields
         public static readonly UserField Lookup = new UserField("lookup");
         public static readonly UserField Timestamp = new UserField("timestamp");
         public static readonly UserField WeaponExp = new UserField("weaponexp");
+
+        protected UserField(string fieldName) : base(fieldName)
+        {
+        }
     }
 }

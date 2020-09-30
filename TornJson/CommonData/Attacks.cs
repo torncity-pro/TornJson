@@ -22,76 +22,54 @@ namespace TornJson.CommonData
 {
     public class Attack : ApiListItem
     {
-        [JsonProperty("code")]
-        public string Code { get; set; }
+        [JsonProperty("code")] public string Code { get; set; }
 
-        [JsonProperty("timestamp_started")]
-        public int TimestampStarted { get; set; }
+        [JsonProperty("timestamp_started")] public int TimestampStarted { get; set; }
 
-        [JsonProperty("timestamp_ended")]
-        public int TimestampEnded { get; set; }
+        [JsonProperty("timestamp_ended")] public int TimestampEnded { get; set; }
 
-        [JsonProperty("attacker_id")]
-        public string AttackerId { get; set; }
+        [JsonProperty("attacker_id")] public string AttackerId { get; set; }
 
-        [JsonProperty("attacker_faction")]
-        public string AttackerFaction { get; set; }
+        [JsonProperty("attacker_faction")] public string AttackerFaction { get; set; }
 
-        [JsonProperty("defender_id")]
-        public int DefenderId { get; set; }
+        [JsonProperty("defender_id")] public int DefenderId { get; set; }
 
-        [JsonProperty("defender_faction")]
-        public int DefenderFaction { get; set; }
+        [JsonProperty("defender_faction")] public int DefenderFaction { get; set; }
 
-        [JsonProperty("result")]
-        public string Result { get; set; }
+        [JsonProperty("result")] public string Result { get; set; }
 
-        [JsonProperty("stealthed")]
-        public bool Stealthed { get; set; }
+        [JsonProperty("stealthed")] public bool Stealthed { get; set; }
 
-        [JsonProperty("respect_gain")]
-        public string RespectGain { get; set; }
+        [JsonProperty("respect_gain")] public string RespectGain { get; set; }
     }
 
     public class AttackDetailed : Attack
     {
-        [JsonProperty("attacker_name")]
-        public string AttackerName { get; set; }
+        [JsonProperty("attacker_name")] public string AttackerName { get; set; }
 
-        [JsonProperty("attacker_factionname")]
-        public string AttackerFactionName { get; set; }
+        [JsonProperty("attacker_factionname")] public string AttackerFactionName { get; set; }
 
-        [JsonProperty("defender_name")]
-        public string DefenderName { get; set; }
+        [JsonProperty("defender_name")] public string DefenderName { get; set; }
 
-        [JsonProperty("defender_factionname")]
-        public string DefenderFactionName { get; set; }
+        [JsonProperty("defender_factionname")] public string DefenderFactionName { get; set; }
 
-        [JsonProperty("chain")]
-        public int Chain { get; set; }
+        [JsonProperty("chain")] public int Chain { get; set; }
 
-        [JsonProperty("modifiers")]
-        public AttackModifiers Modifiers { get; set; }
+        [JsonProperty("modifiers")] public AttackModifiers Modifiers { get; set; }
     }
 
     public class AttackModifiers
     {
-        [JsonProperty("fairFight")]
-        public float FairFight { get; set; }
+        [JsonProperty("fairFight")] public float FairFight { get; set; }
 
-        [JsonProperty("war")]
-        public float War { get; set; }
+        [JsonProperty("war")] public float War { get; set; }
 
-        [JsonProperty("retaliation")]
-        public float Retaliation { get; set; }
+        [JsonProperty("retaliation")] public float Retaliation { get; set; }
 
-        [JsonProperty("groupAttack")]
-        public float GroupAttack { get; set; }
+        [JsonProperty("groupAttack")] public float GroupAttack { get; set; }
 
-        [JsonProperty("overseas")]
-        public float Overseas { get; set; }
+        [JsonProperty("overseas")] public float Overseas { get; set; }
 
-        [JsonProperty("chainBonus")]
-        public float ChainBonus { get; set; }
+        [JsonProperty("chainBonus")] public float ChainBonus { get; set; }
     }
 }

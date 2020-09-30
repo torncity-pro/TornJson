@@ -23,19 +23,14 @@ namespace TornJson.TornData
 {
     public class Medal : ApiListItem
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("description")]
-        public string Description { get; set; }
+        [JsonProperty("description")] public string Description { get; set; }
 
-        [JsonProperty("type")]
-        public string Type { get; set; }
+        [JsonProperty("type")] public string Type { get; set; }
 
-        [JsonProperty("circulation")]
-        public int Circulation { get; set; }
+        [JsonProperty("circulation")] public int Circulation { get; set; }
 
-        [JsonProperty("rarity")]
-        public string Rarity { get; set; }
+        [JsonProperty("rarity")] public string Rarity { get; set; }
     }
 }

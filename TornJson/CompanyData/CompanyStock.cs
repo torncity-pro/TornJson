@@ -22,48 +22,48 @@ using TornJson.CommonData;
 namespace TornJson.CompanyData
 {
     /// <summary>
-    /// Represents a type of item stock in a company
+    ///     Represents a type of item stock in a company
     /// </summary>
     public class CompanyStock : ApiListItem
     {
         /// <summary>
-        /// The cost to order the item for the company stock
+        ///     The cost to order the item for the company stock
         /// </summary>
         [JsonProperty("cost")]
         public int Cost { get; set; }
 
         /// <summary>
-        /// The recommended retail price to sell the item in the company
+        ///     The recommended retail price to sell the item in the company
         /// </summary>
         [JsonProperty("rrp")]
         public int RecommendedRetailPrice { get; set; }
 
         /// <summary>
-        /// The currently set item price
+        ///     The currently set item price
         /// </summary>
         [JsonProperty("price")]
         public int Price { get; set; }
 
         /// <summary>
-        /// The current number of the item in stock
+        ///     The current number of the item in stock
         /// </summary>
         [JsonProperty("in_stock")]
         public int InStock { get; set; }
 
         /// <summary>
-        /// The number of items that have been ordered and are waiting to be delivered
+        ///     The number of items that have been ordered and are waiting to be delivered
         /// </summary>
         [JsonProperty("on_order")]
         public int OnOrder { get; set; }
 
         /// <summary>
-        /// The total amount of this item sold
+        ///     The total amount of this item sold
         /// </summary>
         [JsonProperty("sold_amount")]
         public int SoldAmount { get; set; }
 
         /// <summary>
-        /// The total amount
+        ///     The total amount
         /// </summary>
         [JsonProperty("sold_worth")]
         public long SoldWorth { get; set; }
