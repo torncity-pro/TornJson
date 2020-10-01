@@ -270,5 +270,15 @@ namespace TornJson.UserData
         [JsonProperty("racesentered")] public int RacesEntered { get; set; }
 
         [JsonProperty("racingskill")] public int RacingSkill { get; set; }
+        
+        [JsonProperty("attackswonabroad")] public int AttacksWonAbroad { get; set; }
+        
+        [JsonProperty("defendslostabroad")] public int DefendsLostAbroad { get; set; }
+        
+        [JsonProperty("activestreak")] public int ActivityStreak { get; set; }
+        
+        [JsonProperty("bestactivestreak")] public int  BestActivityStreak { get; set; }
+        
+        [JsonProperty("jobpointsused")] public int JobPointsUsed { get; set; }
     }
 }
