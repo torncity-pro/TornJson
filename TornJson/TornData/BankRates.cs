@@ -1,6 +1,6 @@
 ﻿/***********************************************************************
   This project provides a C# interface to the Torn.com API.
-  Copyright (C) 2019  TornCityPro
+  Copyright (C) 2020  TornCityPro
   
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
