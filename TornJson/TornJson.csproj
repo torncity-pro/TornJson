@@ -24,11 +24,11 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression></PackageLicenseExpression>
     <Copyright>2020</Copyright>
-    <Version>2.0.3</Version>
+    <Version>2.0.4</Version>
     <PackageId>TornCityJsonData</PackageId>
     <Authors>Anonymous</Authors>
-    <Company>toncity.pro</Company>
-    <Product>TornCityPro</Product>
+    <Company>TornCityPro</Company>
+    <Product>TornCityJsonData</Product>
     <Description>An interface to the Torn City API.</Description>
     <PackageTags>Torn TornCity City API</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
