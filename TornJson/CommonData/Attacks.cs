@@ -40,7 +40,7 @@ namespace TornJson.CommonData
 
         [JsonProperty("stealthed")] public bool Stealthed { get; set; }
 
-        [JsonProperty("respect_gain")] public string RespectGain { get; set; }
+        [JsonProperty("respect_gain")] public float RespectGain { get; set; }
     }
 
     public class AttackDetailed : Attack
