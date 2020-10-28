@@ -109,7 +109,7 @@ namespace TornJson.Exceptions
 
             if (ex.TornErrorInfo == null)
             {
-                return new UnknownException(new TornExceptionInfo()
+                return new UnknownException(new TornExceptionInfo
                 {
                     ErrorCode = 0,
                     ErrorMessage = "Unknown Error"
