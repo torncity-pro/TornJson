@@ -103,34 +103,25 @@ namespace TornJson.Exceptions
         /// </summary>
         /// <param name="ex">The error information from the api call</param>
         /// <returns>The concrete exception class for the specific error</returns>
-        public static ApiException CreateExceptionFromExceptionInfo(this ApiException ex)
+        public static ApiException CreateExceptionFromExceptionInfo(this TornExceptionInfo ex)
         {
             if (ex == null) throw new ArgumentNullException(nameof(ex));
 
-            if (ex.TornErrorInfo == null)
+            return ex.ErrorCode switch
             {
-                return new UnknownException(new TornExceptionInfo
-                {
-                    ErrorCode = 0,
-                    ErrorMessage = "Unknown Error"
-                });
-            }
-
-            return ex.TornErrorInfo.ErrorCode switch
-            {
-                1 => new EmptyApiKeyException(ex.TornErrorInfo),
-                2 => new IncorrectApiKeyException(ex.TornErrorInfo),
-                3 => new WrongTypeException(ex.TornErrorInfo),
-                4 => new WrongFieldException(ex.TornErrorInfo),
-                5 => new TooManyRequestsException(ex.TornErrorInfo),
-                6 => new IncorrectIdException(ex.TornErrorInfo),
-                7 => new IncorrectIdEntityRelationException(ex.TornErrorInfo),
-                8 => new BlockedIpException(ex.TornErrorInfo),
-                9 => new ApiDisabledException(ex.TornErrorInfo),
-                10 => new PlayerBannedException(ex.TornErrorInfo),
-                11 => new ApiKeyChangeException(ex.TornErrorInfo),
-                12 => new ApiKeyReadException(ex.TornErrorInfo),
-                _ => new UnknownException(ex.TornErrorInfo)
+                1 => new EmptyApiKeyException(ex),
+                2 => new IncorrectApiKeyException(ex),
+                3 => new WrongTypeException(ex),
+                4 => new WrongFieldException(ex),
+                5 => new TooManyRequestsException(ex),
+                6 => new IncorrectIdException(ex),
+                7 => new IncorrectIdEntityRelationException(ex),
+                8 => new BlockedIpException(ex),
+                9 => new ApiDisabledException(ex),
+                10 => new PlayerBannedException(ex),
+                11 => new ApiKeyChangeException(ex),
+                12 => new ApiKeyReadException(ex),
+                _ => new UnknownException(ex)
             };
         }
     }
