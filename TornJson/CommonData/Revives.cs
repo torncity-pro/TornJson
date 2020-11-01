@@ -31,6 +31,11 @@ namespace TornJson.CommonData
         [JsonProperty("target_id")] public int TargetId { get; set; }
 
         [JsonProperty("target_faction")] public int TargetFaction { get; set; }
+        
+        [JsonProperty("target_hospital_reason")]
+        public string TargetHospitalReason { get; set; }
+
+        [JsonProperty("target_last_action")] public LastAction TargetLastAction { get; set; }
     }
 
     public class ReviveDetailed : Revive
@@ -42,10 +47,5 @@ namespace TornJson.CommonData
         [JsonProperty("target_name")] public string TargetName { get; set; }
 
         [JsonProperty("target_factionname")] public string TargetFactionName { get; set; }
-
-        [JsonProperty("target_hospital_reason")]
-        public string TargetHospitalReason { get; set; }
-
-        [JsonProperty("target_last_action")] public LastAction TargetLastAction { get; set; }
     }
 }
