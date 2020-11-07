@@ -24,7 +24,7 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression></PackageLicenseExpression>
     <Copyright>2020</Copyright>
-    <Version>2.1.3</Version>
+    <Version>2.1.4</Version>
     <PackageId>TornCityJsonData</PackageId>
     <Authors>Anonymous</Authors>
     <Company>TornCityPro</Company>

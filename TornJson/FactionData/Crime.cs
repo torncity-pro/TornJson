@@ -28,7 +28,7 @@ namespace TornJson.FactionData
 
         [JsonProperty("crime_name")] public string CrimeName { get; set; }
 
-        [JsonProperty("participants")] public List<Dictionary<string, List<string>>> Participants { get; private set; }
+        // [JsonProperty("participants")] public List<Dictionary<string, List<string>>> Participants { get; private set; }
 
         [JsonProperty("time_started")] public int TimeStarted { get; set; }
 
