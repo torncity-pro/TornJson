@@ -27,6 +27,7 @@ namespace TornJson
     ///     Defines a converter that can convert those weird api results into a list
     /// </summary>
     /// <typeparam name="T">The base object of the weird list to be used in the new list</typeparam>
+    /// <typeparam name="T1">The Type of the Id property of the type T</typeparam>
     public class TornListConverter<T, T1> : JsonConverter<List<T>> where T : ApiListItem<T1>, new()
     {
         public override List<T> ReadJson(JsonReader reader, Type objectType, List<T> existingValue,
