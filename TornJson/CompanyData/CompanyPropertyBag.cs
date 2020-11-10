@@ -43,21 +43,21 @@ namespace TornJson.CompanyData
         ///     The current item stock of the company
         /// </summary>
         [JsonProperty("company_stock")]
-        [JsonConverter(typeof(TornListConverter<CompanyStock>))]
+        [JsonConverter(typeof(TornListConverter<CompanyStock, string>))]
         public List<CompanyStock> CompanyStock { get; private set; }
 
         /// <summary>
         ///     The company employees
         /// </summary>
         [JsonProperty("company_employees")]
-        [JsonConverter(typeof(TornListConverter<CompanyEmployee>))]
+        [JsonConverter(typeof(TornListConverter<CompanyEmployee, int>))]
         public List<CompanyEmployee> CompanyEmployees { get; private set; }
 
         /// <summary>
         ///     The news for the company
         /// </summary>
         [JsonProperty("news")]
-        [JsonConverter(typeof(TornListConverter<News>))]
+        [JsonConverter(typeof(TornListConverter<News, int>))]
         public List<News> News { get; private set; }
     }
 }

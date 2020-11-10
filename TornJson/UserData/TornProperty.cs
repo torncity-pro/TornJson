@@ -57,7 +57,7 @@ namespace TornJson.UserData
         [JsonProperty("doctor")] public byte Doctor { get; set; }
     }
 
-    public class TornProperty : ApiListItem
+    public class TornProperty : ApiListItem<int>
     {
         [JsonProperty("owner_id")] public int OwnerId { get; set; }
 

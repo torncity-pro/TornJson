@@ -20,7 +20,7 @@ using Newtonsoft.Json;
 
 namespace TornJson.CommonData
 {
-    public class Revive : ApiListItem
+    public class Revive : ApiListItem<int>
     {
         [JsonProperty("timestamp")] public int Timestamp { get; set; }
 

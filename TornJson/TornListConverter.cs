@@ -27,7 +27,7 @@ namespace TornJson
     ///     Defines a converter that can convert those weird api results into a list
     /// </summary>
     /// <typeparam name="T">The base object of the weird list to be used in the new list</typeparam>
-    public class TornListConverter<T> : JsonConverter<List<T>> where T : ApiListItem, new()
+    public class TornListConverter<T, T1> : JsonConverter<List<T>> where T : ApiListItem<T1>, new()
     {
         public override List<T> ReadJson(JsonReader reader, Type objectType, List<T> existingValue,
             bool hasExistingValue, JsonSerializer serializer)
@@ -41,7 +41,7 @@ namespace TornJson
             var startingDepth = reader.Depth;
             while (reader.Read() && reader.Depth > startingDepth)
             {
-                var entry = new T {Id = (string) reader.Value};
+                var entry = new T {Id = (T1) reader.Value};
                 reader.Read();
                 serializer.Populate(reader, entry);
                 existingValue.Add(entry);
@@ -61,7 +61,7 @@ namespace TornJson
             writer.WriteStartObject();
             foreach (var name in value)
             {
-                writer.WritePropertyName(name.Id);
+                writer.WritePropertyName(name.Id.ToString());
                 serializer.Serialize(writer, name);
             }
 

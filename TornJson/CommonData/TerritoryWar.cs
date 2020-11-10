@@ -20,7 +20,7 @@ using Newtonsoft.Json;
 
 namespace TornJson.CommonData
 {
-    public class TerritoryWar : ApiListItem
+    public class TerritoryWar : ApiListItem<string>
     {
         [JsonProperty("assaulting_faction")] public int AssaultingFaction { get; set; }
 

@@ -22,7 +22,7 @@ using TornJson.CommonData;
 
 namespace TornJson.FactionData
 {
-    public class Crime : ApiListItem
+    public class Crime : ApiListItem<int>
     {
         [JsonProperty("crime_id")] public int CrimeId { get; set; }
 

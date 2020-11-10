@@ -72,7 +72,7 @@ namespace TornJson.UserData
         [JsonProperty("networth")] public NetworthData Networth { get; set; }
 
         [JsonProperty("stocks")]
-        [JsonConverter(typeof(TornListConverter<Stock>))]
+        [JsonConverter(typeof(TornListConverter<Stock, int>))]
         public List<Stock> Stocks { get; private set; }
 
         [JsonProperty("honors_awarded")] public List<int> HonorsAwarded { get; private set; }
@@ -100,7 +100,7 @@ namespace TornJson.UserData
         [JsonProperty("jobpoints")] public JobPoints JobPoints { get; set; }
 
         [JsonProperty("properties")]
-        [JsonConverter(typeof(TornListConverter<TornProperty>))]
+        [JsonConverter(typeof(TornListConverter<TornProperty, int>))]
         public List<TornProperty> Properties { get; private set; }
 
         [JsonProperty("server_time")] public int ServerTime { get; set; }
@@ -194,11 +194,11 @@ namespace TornJson.UserData
         [JsonProperty("book_perks")] public List<string> BookPerks { get; private set; }
 
         [JsonProperty("mesages")]
-        [JsonConverter(typeof(TornListConverter<Message>))]
+        [JsonConverter(typeof(TornListConverter<Message, int>))]
         public List<Message> Messages { get; private set; }
 
         [JsonProperty("events")]
-        [JsonConverter(typeof(TornListConverter<TornEvent>))]
+        [JsonConverter(typeof(TornListConverter<TornEvent, int>))]
         public List<TornEvent> Events { get; private set; }
 
         [JsonProperty("personalstats")] public PersonalStats PersonalStats { get; set; }
@@ -210,11 +210,11 @@ namespace TornJson.UserData
         [JsonProperty("education_completed")] public List<int> EducationCompleted { get; private set; }
 
         [JsonProperty("attacks")]
-        [JsonConverter(typeof(TornListConverter<AttackDetailed>))]
+        [JsonConverter(typeof(TornListConverter<AttackDetailed, int>))]
         public List<AttackDetailed> Attacks { get; private set; }
 
         [JsonProperty("revives")]
-        [JsonConverter(typeof(TornListConverter<ReviveDetailed>))]
+        [JsonConverter(typeof(TornListConverter<ReviveDetailed, int>))]
         public List<ReviveDetailed> Revives { get; private set; }
 
         [JsonProperty("discord")] public Discord Discord { get; set; }

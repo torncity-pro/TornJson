@@ -21,7 +21,7 @@ using TornJson.CommonData;
 
 namespace TornJson.FactionData
 {
-    public class FactionApplication : ApiListItem
+    public class FactionApplication : ApiListItem<string> // TODO: Figure out proper typing
     {
         [JsonProperty("userID")] public string UserId { get; set; }
 

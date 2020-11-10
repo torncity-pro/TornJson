@@ -24,7 +24,7 @@ namespace TornJson.CompanyData
     /// <summary>
     ///     A company employee
     /// </summary>
-    public class CompanyEmployee : ApiListItem
+    public class CompanyEmployee : ApiListItem<int>
     {
         /// <summary>
         ///     The position of the employee

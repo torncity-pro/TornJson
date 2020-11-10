@@ -34,7 +34,7 @@ namespace TornJson.TornData
         [JsonProperty("endurance")] public List<string> Endurance { get; private set; }
     }
 
-    public class Education : ApiListItem
+    public class Education : ApiListItem<int>
     {
         [JsonProperty("name")] public string Name { get; set; }
 

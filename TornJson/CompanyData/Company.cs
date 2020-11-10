@@ -88,14 +88,14 @@ namespace TornJson.CompanyData
         ///     A list of employees in the company
         /// </summary>
         [JsonProperty("employees")]
-        [JsonConverter(typeof(TornListConverter<Employee>))]
+        [JsonConverter(typeof(TornListConverter<Employee, int>))]
         public List<Employee> Employees { get; private set; }
     }
 
     /// <summary>
     ///     An employee in the company
     /// </summary>
-    public class Employee : ApiListItem
+    public class Employee : ApiListItem<int>
     {
         /// <summary>
         ///     The name of the employee

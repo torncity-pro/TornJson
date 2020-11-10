@@ -21,7 +21,7 @@ using TornJson.CommonData;
 
 namespace TornJson.FactionData
 {
-    public class Upgrade : ApiListItem
+    public class Upgrade : ApiListItem<int>
     {
         [JsonProperty("branch")] public string Branch { get; set; }
 

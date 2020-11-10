@@ -22,7 +22,7 @@ using TornJson.CommonData;
 
 namespace TornJson.TornData
 {
-    public class Racket : ApiListItem
+    public class Racket : ApiListItem<string>
     {
         [JsonProperty("name")] public string Name { get; set; }
 

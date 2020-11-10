@@ -21,7 +21,7 @@ using TornJson.CommonData;
 
 namespace TornJson.TornData
 {
-    public class Gym : ApiListItem
+    public class Gym : ApiListItem<int>
     {
         [JsonProperty("name")] public string Name { get; set; }
 
