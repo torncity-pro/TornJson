@@ -117,7 +117,7 @@ namespace TornJson.FactionData
         public List<Chain> Chains { get; private set; }
 
         [JsonProperty("applications")]
-        [JsonConverter(typeof(TornListConverter<FactionApplication, string>))]
+        [JsonConverter(typeof(TornListConverter<FactionApplication, int>))]
         public List<FactionApplication> Applications { get; private set; }
 
         [JsonProperty("cesium")] public List<ArmoryItem> Cesium { get; private set; }
