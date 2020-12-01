@@ -21,7 +21,7 @@ using Newtonsoft.Json;
 
 namespace TornJson.CommonData
 {
-    public class Stock : ApiListItem<int>
+    public class Stock : IntApiListItem
     {
         [JsonProperty("stock_id")] public int StockId { get; set; }
 

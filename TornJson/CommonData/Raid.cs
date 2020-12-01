@@ -21,7 +21,7 @@ using Newtonsoft.Json;
 
 namespace TornJson.CommonData
 {
-    public class Raid : ApiListItem<int>
+    public class Raid : IntApiListItem
     {
         [JsonProperty("assaulting_faction")] public int AssaultingFaction { get; set; }
 

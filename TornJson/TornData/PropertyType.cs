@@ -22,7 +22,7 @@ using TornJson.CommonData;
 
 namespace TornJson.TornData
 {
-    public class PropertyType : ApiListItem<int>
+    public class PropertyType : IntApiListItem
     {
         [JsonProperty("name")] public string Name { get; set; }
 

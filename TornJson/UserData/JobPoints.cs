@@ -35,7 +35,7 @@ namespace TornJson.UserData
         [JsonProperty("grocer")] public int Grocer { get; set; }
     }
 
-    public class CompanyJobPoints : ApiListItem<int>
+    public class CompanyJobPoints : IntApiListItem
     {
         [JsonProperty("name")] public string Name { get; set; }
 
@@ -47,7 +47,7 @@ namespace TornJson.UserData
         [JsonProperty("jobs")] public CityJobPoints Jobs { get; set; }
 
         [JsonProperty("companies")]
-        [JsonConverter(typeof(TornListConverter<CompanyJobPoints, int>))]
+        [JsonConverter(typeof(TornListConverter<CompanyJobPoints>))]
         public List<CompanyJobPoints> Companies { get; private set; }
     }
 }

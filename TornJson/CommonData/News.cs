@@ -20,7 +20,7 @@ using Newtonsoft.Json;
 
 namespace TornJson.CommonData
 {
-    public class News : ApiListItem<int>
+    public class News : IntApiListItem
     {
         [JsonProperty("news")] public string Text { get; set; }
 

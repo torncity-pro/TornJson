@@ -21,7 +21,7 @@ using TornJson.CommonData;
 
 namespace TornJson.UserData
 {
-    public class Message : ApiListItem<int>
+    public class Message : IntApiListItem
     {
         [JsonProperty("timestamp")] public int Timestamp { get; set; }
 

@@ -16,12 +16,51 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
-using Newtonsoft.Json;
-
 namespace TornJson.CommonData
 {
     public abstract class ApiListItem<T>
     {
-        [JsonProperty("id")] public T Id { get; set; }
+        public T Id { get; set; }
+    }
+
+    public abstract class IntApiListItem : IApiListItem<int>
+    {
+        public int Id { get; set; }
+        
+        public void SetId(string input)
+        {
+            Id = int.Parse(input, System.Globalization.CultureInfo.InvariantCulture);
+        }
+
+        public string GetStringId()
+        {
+            return Id.ToString(System.Globalization.CultureInfo.InvariantCulture);
+        }
+    }
+
+    public abstract class StrApiListItem : IApiListItem<string>
+    {
+        public string Id { get; set; }
+        
+        public void SetId(string input)
+        {
+            Id = input;
+        }
+
+        public string GetStringId()
+        {
+            return Id;
+        }
+    }
+    
+    public interface IApiListItem<T> : IApiListItem
+    {
+        public T Id { get; set; }
+    }
+
+    public interface IApiListItem
+    {
+        public void SetId(string input);
+        public string GetStringId();
     }
 }

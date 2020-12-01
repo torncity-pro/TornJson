@@ -22,7 +22,7 @@ using TornJson.CommonData;
 
 namespace TornJson.TornData
 {
-    public class CompanyType : ApiListItem<int>
+    public class CompanyType : IntApiListItem
     {
         [JsonProperty("name")] public string Name { get; set; }
 
@@ -31,19 +31,19 @@ namespace TornJson.TornData
         [JsonProperty("default_employees")] public int DefaultEmployeeCount { get; set; }
 
         [JsonProperty("positions")]
-        [JsonConverter(typeof(TornListConverter<CompanyPosition, string>))]
+        [JsonConverter(typeof(TornListConverter<CompanyPosition>))]
         public List<CompanyPosition> Positions { get; private set; }
 
         [JsonProperty("stock")]
-        [JsonConverter(typeof(TornListConverter<CompanyStock, string>))]
+        [JsonConverter(typeof(TornListConverter<CompanyStock>))]
         public List<CompanyStock> Stock { get; private set; }
 
         [JsonProperty("specials")]
-        [JsonConverter(typeof(TornListConverter<CompanySpecial, string>))]
+        [JsonConverter(typeof(TornListConverter<CompanySpecial>))]
         public List<CompanySpecial> Specials { get; private set; }
     }
 
-    public class CompanyPosition : ApiListItem<string>
+    public class CompanyPosition : StrApiListItem
     {
         [JsonProperty("man_required")] public int ManualLaborRequired { get; set; }
 
@@ -62,7 +62,7 @@ namespace TornJson.TornData
         [JsonProperty("description")] public string Description { get; set; }
     }
 
-    public class CompanySpecial : ApiListItem<string>
+    public class CompanySpecial : StrApiListItem
     {
         [JsonProperty("effect")] public string Effect { get; set; }
 
@@ -71,7 +71,7 @@ namespace TornJson.TornData
         [JsonProperty("rating_required")] public byte RatingRequired { get; set; }
     }
 
-    public class CompanyStock : ApiListItem<string>
+    public class CompanyStock : StrApiListItem
     {
         [JsonProperty("cost")] public int? Cost { get; set; }
 

@@ -39,11 +39,11 @@ namespace TornJson.FactionData
         [JsonProperty("best_chain")] public int BestChain { get; set; }
 
         [JsonProperty("members")]
-        [JsonConverter(typeof(TornListConverter<FactionMember, int>))]
+        [JsonConverter(typeof(TornListConverter<FactionMember>))]
         public List<FactionMember> Members { get; private set; }
 
         [JsonProperty("territory")]
-        [JsonConverter(typeof(TornListConverter<Territory, string>))]
+        [JsonConverter(typeof(TornListConverter<Territory>))]
         public List<Territory> Territory { get; private set; }
 
         [JsonProperty("chain")] public ActiveChain Chain { get; set; }
@@ -67,57 +67,57 @@ namespace TornJson.FactionData
         [JsonProperty("boosters")] public List<ArmoryItem> Boosters { get; private set; }
 
         [JsonProperty("mainnews")]
-        [JsonConverter(typeof(TornListConverter<News, int>))]
+        [JsonConverter(typeof(TornListConverter<News>))]
         public List<News> MainNews { get; private set; }
 
         [JsonProperty("attacknews")]
-        [JsonConverter(typeof(TornListConverter<News, int>))]
+        [JsonConverter(typeof(TornListConverter<News>))]
         public List<News> AttackNews { get; private set; }
 
         [JsonProperty("fundsnews")]
-        [JsonConverter(typeof(TornListConverter<News, int>))]
+        [JsonConverter(typeof(TornListConverter<News>))]
         public List<News> FundsNews { get; private set; }
 
         [JsonProperty("armorynews")]
-        [JsonConverter(typeof(TornListConverter<News, int>))]
+        [JsonConverter(typeof(TornListConverter<News>))]
         public List<News> ArmoryNews { get; private set; }
 
         [JsonProperty("crimesnews")]
-        [JsonConverter(typeof(TornListConverter<News, int>))]
+        [JsonConverter(typeof(TornListConverter<News>))]
         public List<News> CrimesNews { get; private set; }
 
         [JsonProperty("membershipnews")]
-        [JsonConverter(typeof(TornListConverter<News, int>))]
+        [JsonConverter(typeof(TornListConverter<News>))]
         public List<News> MembershipNews { get; private set; }
 
         [JsonProperty("crimes")]
-        [JsonConverter(typeof(TornListConverter<Crime, int>))]
+        [JsonConverter(typeof(TornListConverter<Crime>))]
         public List<Crime> Crimes { get; private set; }
 
         [JsonProperty("attacks")]
-        [JsonConverter(typeof(TornListConverter<AttackDetailed, int>))]
+        [JsonConverter(typeof(TornListConverter<AttackDetailed>))]
         public List<AttackDetailed> Attacks { get; private set; }
 
         [JsonProperty("revives")]
-        [JsonConverter(typeof(TornListConverter<ReviveDetailed, int>))]
+        [JsonConverter(typeof(TornListConverter<ReviveDetailed>))]
         public List<ReviveDetailed> Revives { get; private set; }
 
         [JsonProperty("upgrades")]
-        [JsonConverter(typeof(TornListConverter<Upgrade, int>))]
+        [JsonConverter(typeof(TornListConverter<Upgrade>))]
         public List<Upgrade> Upgrades { get; private set; }
 
         [JsonProperty("stats")] public FactionStats Stats { get; set; }
 
         [JsonProperty("donations")]
-        [JsonConverter(typeof(TornListConverter<UserBalance, int>))]
+        [JsonConverter(typeof(TornListConverter<UserBalance>))]
         public List<UserBalance> Donations { get; private set; }
 
         [JsonProperty("chains")]
-        [JsonConverter(typeof(TornListConverter<Chain, int>))]
+        [JsonConverter(typeof(TornListConverter<Chain>))]
         public List<Chain> Chains { get; private set; }
 
         [JsonProperty("applications")]
-        [JsonConverter(typeof(TornListConverter<FactionApplication, int>))]
+        [JsonConverter(typeof(TornListConverter<FactionApplication>))]
         public List<FactionApplication> Applications { get; private set; }
 
         [JsonProperty("cesium")] public List<ArmoryItem> Cesium { get; private set; }

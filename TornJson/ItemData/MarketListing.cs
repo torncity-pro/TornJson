@@ -24,7 +24,7 @@ namespace TornJson.ItemData
     /// <summary>
     ///     A listing in a market
     /// </summary>
-    public class MarketListing : ApiListItem<int>
+    public class MarketListing : IntApiListItem
     {
         /// <summary>
         ///     The cost of them item

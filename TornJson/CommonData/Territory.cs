@@ -21,7 +21,7 @@ using Newtonsoft.Json;
 
 namespace TornJson.CommonData
 {
-    public class Territory : ApiListItem<string>
+    public class Territory : StrApiListItem
     {
         [JsonProperty("sector")] public byte Sector { get; set; }
 

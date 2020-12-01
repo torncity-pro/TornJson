@@ -24,7 +24,7 @@ namespace TornJson.CompanyData
     /// <summary>
     ///     Represents a type of item stock in a company
     /// </summary>
-    public class CompanyStock : ApiListItem<string>
+    public class CompanyStock : StrApiListItem
     {
         /// <summary>
         ///     The cost to order the item for the company stock

@@ -31,7 +31,7 @@ namespace TornJson.ItemData
         ///     A list of points for sale on the market
         /// </summary>
         [JsonProperty("pointsmarket")]
-        [JsonConverter(typeof(TornListConverter<PointsListing, int>))]
+        [JsonConverter(typeof(TornListConverter<PointsListing>))]
         public List<PointsListing> PointsMarket { get; private set; }
 
         /// <summary>
