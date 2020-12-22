@@ -122,14 +122,14 @@ namespace TornJson.FactionData
 
         [JsonProperty("cesium")] public List<ArmoryItem> Cesium { get; private set; }
 
+        [JsonProperty("peace")]
+        public Dictionary<string, int> Peace { get; private set; }
+        
         // TODO: These are a blank object when null {} and a List when non-null []
         //[JsonProperty("territory_wars")]
         //public List<TerritoryWar> TerritoryWars { get; set; }
 
         //[JsonProperty("raid_wars")]
         //public List<RaidWar> RaidWars { get; set; }
-        
-        //[JsonProperty("peace")]
-        //public Dictionary<string, int> Peace { get; set; }
     }
 }
