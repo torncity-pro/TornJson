@@ -125,11 +125,12 @@ namespace TornJson.FactionData
         [JsonProperty("peace")]
         public Dictionary<string, int> Peace { get; private set; }
         
-        // TODO: These are a blank object when null {} and a List when non-null []
-        //[JsonProperty("territory_wars")]
-        //public List<TerritoryWar> TerritoryWars { get; set; }
+        [JsonProperty("territory_wars")]
+        [JsonConverter(typeof(TornWarConverter<TerritoryWar>))]
+        public List<TerritoryWar> TerritoryWars { get; private set; }
 
-        //[JsonProperty("raid_wars")]
-        //public List<RaidWar> RaidWars { get; set; }
+        [JsonProperty("raid_wars")]
+        [JsonConverter(typeof(TornWarConverter<RaidWar>))]
+        public List<RaidWar> RaidWars { get; private set; }
     }
 }
