@@ -28,7 +28,7 @@ namespace TornJson.FactionData
 
         [JsonProperty("crime_name")] public string CrimeName { get; set; }
 
-        // [JsonProperty("participants")] public List<Dictionary<string, List<string>>> Participants { get; private set; }
+        [JsonProperty("participants")] public List<OrganizedCrimeParticipant> Participants { get; private set; }
 
         [JsonProperty("time_started")] public int TimeStarted { get; set; }
 
@@ -49,5 +49,12 @@ namespace TornJson.FactionData
         [JsonProperty("money_gain")] public int MoneyGain { get; set; }
 
         [JsonProperty("respect_gain")] public int RespectGain { get; set; }
+    }
+    
+    [JsonConverter(typeof(TornParticipantConverter))]
+    public class OrganizedCrimeParticipant
+    {
+        public int PlayerId { get; set; }
+        public Status Status { get; set; }
     }
 }
