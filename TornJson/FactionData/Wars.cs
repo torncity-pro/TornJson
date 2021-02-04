@@ -31,9 +31,9 @@ namespace TornJson.FactionData
     {
         [JsonProperty("raiding_faction")] public int AssaultingFaction { get; set; }
 
-        [JsonProperty("raider_score")] public int RaiderScore { get; set; }
+        [JsonProperty("raider_score")] public float RaiderScore { get; set; }
 
-        [JsonProperty("defender_score")] public int DefenderScore { get; set; }
+        [JsonProperty("defender_score")] public float DefenderScore { get; set; }
     }
 
     public class TerritoryWar : War
