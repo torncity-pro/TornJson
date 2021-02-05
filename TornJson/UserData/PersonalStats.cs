@@ -185,5 +185,9 @@ namespace TornJson.UserData
         [JsonProperty("weaponsbought")] public int WeaponsBought { get; set; }
         [JsonProperty("xantaken")] public int XanaxTaken { get; set; }
         [JsonProperty("yourunaway")] public int YouRunAway { get; set; }
+        [JsonProperty("elo")] public int EloRating { get; set; }
+        [JsonProperty("retals")] public int Retaliations { get; set; }
+        [JsonProperty("activestreak")] public int ActiveStreak { get; set; }
+        [JsonProperty("bestactivestreak")] public int BestActiveStreak { get; set; }
     }
 }
