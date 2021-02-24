@@ -109,7 +109,7 @@ namespace TornJson.UserData
         [JsonProperty("missioncreditsearned")] public int MissionCreditsEarned { get; set; }
         [JsonProperty("missionscompleted")] public int MissionsCompleted { get; set; }
         [JsonProperty("moneyinvested")] public long MoneyInvested { get; set; }
-        [JsonProperty("moneymugged")] public int MoneyMugged { get; set; }
+        [JsonProperty("moneymugged")] public long MoneyMugged { get; set; }
         [JsonProperty("nerverefills")] public int NerveRefills { get; set; }
         [JsonProperty("networth")] public long Networth { get; set; }
         [JsonProperty("networthauctionhouse")] public long NetworthAuctionHouse { get; set; }
@@ -135,7 +135,7 @@ namespace TornJson.UserData
         [JsonProperty("overdosed")] public int TimesOverdosed { get; set; }
         [JsonProperty("pcptaken")] public int PcpTaken { get; set; }
         [JsonProperty("peoplebought")] public int PeopleBailed { get; set; }
-        [JsonProperty("peopleboughtspent")] public int BailFees { get; set; }
+        [JsonProperty("peopleboughtspent")] public long BailFees { get; set; }
         [JsonProperty("peoplebusted")] public int PeopleBusted { get; set; }
         [JsonProperty("personalsplaced")] public int PersonalsPlaced { get; set; }
         [JsonProperty("piehits")] public int PiercingHits { get; set; }
