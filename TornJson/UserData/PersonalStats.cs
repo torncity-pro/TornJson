@@ -187,8 +187,6 @@ namespace TornJson.UserData
         [JsonProperty("yourunaway")] public int YouRunAway { get; set; }
         [JsonProperty("elo")] public int EloRating { get; set; }
         [JsonProperty("retals")] public int Retaliations { get; set; }
-        [JsonProperty("activestreak")] public int ActiveStreak { get; set; }
-        [JsonProperty("bestactivestreak")] public int BestActiveStreak { get; set; }
         [JsonProperty("reviveskill")] public int ReviveSkill { get; set; }
     }
 }
