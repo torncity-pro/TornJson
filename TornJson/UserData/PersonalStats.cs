@@ -149,7 +149,7 @@ namespace TornJson.UserData
         [JsonProperty("racingskill")] public int RacingSkill { get; set; }
         [JsonProperty("receivedbountyvalue")] public long ReceivedBountyValue { get; set; }
         [JsonProperty("refills")] public int Refills { get; set; }
-        [JsonProperty("rehabcost")] public int RehabCost { get; set; }
+        [JsonProperty("rehabcost")] public long RehabCost { get; set; }
         [JsonProperty("rehabs")] public int Rehabs { get; set; }
         [JsonProperty("respectforfaction")] public int RespectForFaction { get; set; }
         [JsonProperty("revives")] public int Revives { get; set; }
