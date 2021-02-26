@@ -36,6 +36,10 @@ namespace TornJson.CommonData
         public string TargetHospitalReason { get; set; }
 
         [JsonProperty("target_last_action")] public LastAction TargetLastAction { get; set; }
+        
+        [JsonProperty("result")] public string Result { get; set; }
+
+        [JsonProperty("chance")] public short Chance { get; set; }
     }
 
     public class ReviveDetailed : Revive
