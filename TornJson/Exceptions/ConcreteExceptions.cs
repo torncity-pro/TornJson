@@ -387,4 +387,60 @@ namespace TornJson.Exceptions
             throw new NotImplementedException();
         }
     }
+
+    /// <summary>
+    ///     Represents error code 13
+    /// </summary>
+    [Serializable]
+    public class ApiKeyDisabledException : ApiException
+    {
+        public ApiKeyDisabledException(TornExceptionInfo ex) : base(ex)
+        {
+        }
+
+        public ApiKeyDisabledException()
+        {
+        }
+
+        public ApiKeyDisabledException(string message) : base(message)
+        {
+        }
+
+        public ApiKeyDisabledException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+
+        protected ApiKeyDisabledException(SerializationInfo serializationInfo, StreamingContext streamingContext)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    /// <summary>
+    ///     Represents error code 14
+    /// </summary>
+    [Serializable]
+    public class DailyReadLimitReachedException : ApiException
+    {
+        public DailyReadLimitReachedException(TornExceptionInfo ex) : base(ex)
+        {
+        }
+
+        public DailyReadLimitReachedException()
+        {
+        }
+
+        public DailyReadLimitReachedException(string message) : base(message)
+        {
+        }
+
+        public DailyReadLimitReachedException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+
+        protected DailyReadLimitReachedException(SerializationInfo serializationInfo, StreamingContext streamingContext)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

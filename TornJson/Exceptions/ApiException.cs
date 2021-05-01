@@ -121,6 +121,8 @@ namespace TornJson.Exceptions
                 10 => new PlayerBannedException(ex),
                 11 => new ApiKeyChangeException(ex),
                 12 => new ApiKeyReadException(ex),
+                13 => new ApiKeyDisabledException(ex),
+                14 => new DailyReadLimitReachedException(ex),
                 _ => new UnknownException(ex)
             };
         }
