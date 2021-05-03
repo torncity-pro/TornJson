@@ -70,6 +70,6 @@ namespace TornJson.CommonData
 
         [JsonProperty("overseas")] public float Overseas { get; set; }
 
-        [JsonProperty("chainBonus")] public float ChainBonus { get; set; }
+        [JsonProperty("chain_bonus")] public float ChainBonus { get; set; }
     }
 }
