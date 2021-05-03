@@ -39,7 +39,7 @@ namespace TornJson.CommonData
         
         [JsonProperty("result")] public string Result { get; set; }
 
-        [JsonProperty("chance")] public short Chance { get; set; }
+        [JsonProperty("chance")] public float Chance { get; set; }
     }
 
     public class ReviveDetailed : Revive
