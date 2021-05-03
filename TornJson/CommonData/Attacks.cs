@@ -66,7 +66,7 @@ namespace TornJson.CommonData
 
         [JsonProperty("retaliation")] public float Retaliation { get; set; }
 
-        [JsonProperty("groupAttack")] public float GroupAttack { get; set; }
+        [JsonProperty("group_attack")] public float GroupAttack { get; set; }
 
         [JsonProperty("overseas")] public float Overseas { get; set; }
 
