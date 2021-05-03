@@ -42,6 +42,12 @@ namespace TornJson.UserData
 
         [JsonProperty("Hospitalizing")] public int Hospitalizing { get; set; }
 
+        [JsonProperty("Addiction Mitigation")]
+		public int AddictionMitigation { get; set; }
+
+        [JsonProperty("Employee Effectiveness")]
+		public int EmployeeEffectiveness { get; set; }
+
         [JsonProperty("Brawn")] public int Brawn { get; set; }
 
         [JsonProperty("Protection")] public int Protection { get; set; }
