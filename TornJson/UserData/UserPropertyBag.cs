@@ -167,7 +167,7 @@ namespace TornJson.UserData
 
         [JsonProperty("cayman_bank")] public int CaymanBank { get; set; }
 
-        [JsonProperty("vault_amount")] public int VaultAmount { get; set; }
+        [JsonProperty("vault_amount")] public int? VaultAmount { get; set; }
 
         [JsonProperty("daily_networth")] public long DailyNetworth { get; set; }
 
