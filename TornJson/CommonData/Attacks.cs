@@ -60,7 +60,7 @@ namespace TornJson.CommonData
 
     public class AttackModifiers
     {
-        [JsonProperty("fairFight")] public float FairFight { get; set; }
+        [JsonProperty("fair_fight")] public float FairFight { get; set; }
 
         [JsonProperty("war")] public float War { get; set; }
 
