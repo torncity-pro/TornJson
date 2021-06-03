@@ -24,6 +24,8 @@ namespace TornJson.UserData
     {
         [JsonProperty("destination")] public string Destination { get; set; }
 
+        [JsonProperty("method")] public string Method { get; set; }
+
         [JsonProperty("timestamp")] public int Timestamp { get; set; }
 
         [JsonProperty("departed")] public int Departed { get; set; }

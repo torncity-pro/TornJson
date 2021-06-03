@@ -28,6 +28,8 @@ namespace TornJson.FactionData
 
         [JsonProperty("name")] public string Name { get; set; }
 
+        [JsonProperty("tag")] public string Tag { get; set; }
+
         [JsonProperty("leader")] public int Leader { get; set; }
 
         [JsonProperty("co-leader")] public int CoLeader { get; set; }
@@ -35,6 +37,8 @@ namespace TornJson.FactionData
         [JsonProperty("respect")] public int Respect { get; set; }
 
         [JsonProperty("age")] public int Age { get; set; }
+
+        [JsonProperty("capacity")] public short Capacity { get; set; }
 
         [JsonProperty("best_chain")] public int BestChain { get; set; }
 

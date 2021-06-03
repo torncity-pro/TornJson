@@ -40,7 +40,7 @@ namespace TornJson.CommonData
 
         [JsonProperty("stealthed")] public bool Stealthed { get; set; }
 
-        [JsonProperty("respect_gain")] public float RespectGain { get; set; }
+        [JsonProperty("respect")] public float RespectGain { get; set; }
     }
 
     public class AttackDetailed : Attack
@@ -54,6 +54,12 @@ namespace TornJson.CommonData
         [JsonProperty("defender_factionname")] public string DefenderFactionName { get; set; }
 
         [JsonProperty("chain")] public int Chain { get; set; }
+
+        [JsonProperty("raid")] public bool Raid { get; set; }
+
+        [JsonProperty("respect_gain")] public new float RespectGain { get; set; }
+
+        [JsonProperty("respect_loss")] public float RespectLoss { get; set; }
 
         [JsonProperty("modifiers")] public AttackModifiers Modifiers { get; set; }
     }
