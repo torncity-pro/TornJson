@@ -40,6 +40,8 @@ namespace TornJson.CommonData
         [JsonProperty("result")] public string Result { get; set; }
 
         [JsonProperty("chance")] public float Chance { get; set; }
+
+        [JsonProperty("target_early_discharge")] public bool EarlyDischarge { get; set; }
     }
 
     public class ReviveDetailed : Revive
