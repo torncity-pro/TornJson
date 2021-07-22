@@ -28,7 +28,7 @@ namespace TornJson.FactionData
 
         [JsonProperty("timeout")] public int Timeout { get; set; }
 
-        [JsonProperty("modifier")] public int Modifier { get; set; }
+        [JsonProperty("modifier")] public float Modifier { get; set; }
 
         [JsonProperty("cooldown")] public int Cooldown { get; set; }
 
