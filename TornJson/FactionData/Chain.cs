@@ -25,7 +25,7 @@ namespace TornJson.FactionData
     {
         [JsonProperty("chain")] public int HitCount { get; set; }
 
-        [JsonProperty("respect")] public string Respect { get; set; }
+        [JsonProperty("respect")] public float Respect { get; set; }
 
         [JsonProperty("start")] public int Start { get; set; }
 
