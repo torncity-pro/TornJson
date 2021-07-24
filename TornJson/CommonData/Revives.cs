@@ -26,11 +26,11 @@ namespace TornJson.CommonData
 
         [JsonProperty("reviver_id")] public int ReviverId { get; set; }
 
-        [JsonProperty("reviver_faction")] public int ReviverFaction { get; set; }
+        [JsonProperty("reviver_faction")] public int ReviverFactionId { get; set; }
 
         [JsonProperty("target_id")] public int TargetId { get; set; }
 
-        [JsonProperty("target_faction")] public int TargetFaction { get; set; }
+        [JsonProperty("target_faction")] public int TargetFactionId { get; set; }
         
         [JsonProperty("target_hospital_reason")]
         public string TargetHospitalReason { get; set; }

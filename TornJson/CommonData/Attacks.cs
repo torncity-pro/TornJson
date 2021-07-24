@@ -30,11 +30,11 @@ namespace TornJson.CommonData
 
         [JsonProperty("attacker_id")] public string AttackerId { get; set; }
 
-        [JsonProperty("attacker_faction")] public string AttackerFaction { get; set; }
+        [JsonProperty("attacker_faction")] public string AttackerFactionId { get; set; }
 
         [JsonProperty("defender_id")] public int DefenderId { get; set; }
 
-        [JsonProperty("defender_faction")] public int DefenderFaction { get; set; }
+        [JsonProperty("defender_faction")] public int DefenderFactionId { get; set; }
 
         [JsonProperty("result")] public string Result { get; set; }
 
