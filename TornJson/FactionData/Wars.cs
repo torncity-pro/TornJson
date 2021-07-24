@@ -22,14 +22,14 @@ namespace TornJson.FactionData
 {
     public abstract class War
     {
-        [JsonProperty("defending_faction")] public int DefendingFaction { get; set; }
+        [JsonProperty("defending_faction")] public int DefendingFactionId { get; set; }
 
         [JsonProperty("start_time")] public int StartTime { get; set; }
     }
 
     public class RaidWar : War
     {
-        [JsonProperty("raiding_faction")] public int AssaultingFaction { get; set; }
+        [JsonProperty("raiding_faction")] public int AssaultingFactionId { get; set; }
 
         [JsonProperty("raider_score")] public float RaiderScore { get; set; }
 
@@ -40,7 +40,7 @@ namespace TornJson.FactionData
     {
         [JsonProperty("territory")] public string Territory { get; set; }
 
-        [JsonProperty("assaulting_faction")] public int AssaultingFaction { get; set; }
+        [JsonProperty("assaulting_faction")] public int AssaultingFactionId { get; set; }
 
         [JsonProperty("score")] public int Score { get; set; }
 

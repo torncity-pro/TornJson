@@ -31,11 +31,11 @@ namespace TornJson.CommonData
 
         [JsonProperty("daily_respect")] public short DailyRespect { get; set; }
 
-        [JsonProperty("faction")] public int Faction { get; set; }
+        [JsonProperty("faction")] public int FactionId { get; set; }
 
-        [JsonProperty("coordinate_x")] public string CoordinateX { get; set; }
+        [JsonProperty("coordinate_x")] public float CoordinateX { get; set; }
 
-        [JsonProperty("coordinate_y")] public string CoordinateY { get; set; }
+        [JsonProperty("coordinate_y")] public float CoordinateY { get; set; }
 
         [JsonProperty("neighbors")] public List<string> Neighbors { get; private set; }
     }

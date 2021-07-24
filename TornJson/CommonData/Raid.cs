@@ -23,9 +23,9 @@ namespace TornJson.CommonData
 {
     public class Raid : IntApiListItem
     {
-        [JsonProperty("assaulting_faction")] public int AssaultingFaction { get; set; }
+        [JsonProperty("assaulting_faction")] public int AssaultingFactionId { get; set; }
 
-        [JsonProperty("defending_faction")] public int DefendingFaction { get; set; }
+        [JsonProperty("defending_faction")] public int DefendingFactionId { get; set; }
 
         [JsonProperty("assaulting_score")] public float AssaultingScore { get; set; }
 
