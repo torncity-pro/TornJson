@@ -27,5 +27,7 @@ namespace TornJson.UserData
         [JsonProperty("company_id")] public int CompanyId { get; set; }
 
         [JsonProperty("company_name")] public string CompanyName { get; set; }
+
+        [JsonProperty("company_type")] public byte CompanyType { get; set; }
     }
 }
