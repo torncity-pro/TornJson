@@ -16,6 +16,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ************************************************************************/
 
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using Newtonsoft.Json;
@@ -125,7 +126,7 @@ namespace TornJson.UserData
 
         [JsonProperty("property")] public string Property { get; set; }
 
-        [JsonProperty("signup")] public string Signup { get; set; }
+        [JsonProperty("signup")] public DateTime Signup { get; set; }
 
         [JsonProperty("awards")] public int Awards { get; set; }
 

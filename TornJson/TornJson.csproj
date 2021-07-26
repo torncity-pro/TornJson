@@ -23,8 +23,8 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression></PackageLicenseExpression>
-    <Copyright>2020</Copyright>
-    <Version>2.7.1</Version>
+    <Copyright>2021</Copyright>
+    <Version>2.7.2</Version>
     <PackageId>TornCityJsonData</PackageId>
     <Authors>Anonymous</Authors>
     <Company>TornCityPro</Company>
