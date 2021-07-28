@@ -30,5 +30,7 @@ namespace TornJson.FactionData
         [JsonProperty("last_action")] public LastAction LastAction { get; set; }
 
         [JsonProperty("status")] public Status Status { get; set; }
+
+        [JsonProperty("position")] public string Position { get; set; }
     }
 }
