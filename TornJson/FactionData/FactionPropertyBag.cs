@@ -112,7 +112,7 @@ namespace TornJson.FactionData
 
         [JsonProperty("stats")] public FactionStats Stats { get; set; }
 
-        [JsonProperty("contributors")] public FactionContributions Contributors { get; set; }
+        [JsonProperty("contributors")] public FactionContributions Contributions { get; set; }
 
         [JsonProperty("donations")]
         [JsonConverter(typeof(TornListConverter<UserBalance>))]

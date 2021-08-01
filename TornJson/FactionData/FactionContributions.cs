@@ -33,164 +33,162 @@ namespace TornJson.FactionData
 
     public class FactionContributions
     {
+        public List<Contribution> Contributors { get; private set; }
+
         [JsonProperty("AlcoholUsed")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> AlcoholUsed { get; private set; }
+        private List<Contribution> AlcoholUsed { get { return Contributors; } set { Contributors = value; } }
 
-        [JsonProperty("AttacksDamage")] 
+        [JsonProperty("AttacksDamage")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> AttacksDamage { get; private set; }
+        private List<Contribution> AttacksDamage { get { return Contributors; } set { Contributors = value; } }
 
         [JsonProperty("AttacksDamageHits")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> AttacksDamageHits { get; private set; }
+        private List<Contribution> AttacksDamageHits { get { return Contributors; } set { Contributors = value; } }
 
         [JsonProperty("AttacksDamaging")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> AttacksDamaging { get; private set; }
-        
+        private List<Contribution> AttacksDamaging { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("AttacksHosp")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> AttacksHosp { get; private set; }
-        
+        private List<Contribution> AttacksHosp { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("AttacksLeave")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> AttacksLeave { get; private set; }
-        
+        private List<Contribution> AttacksLeave { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("AttacksLost")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> AttacksLost { get; private set; }
-        
+        private List<Contribution> AttacksLost { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("AttacksMug")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> AttacksMug { get; private set; }
-        
+        private List<Contribution> AttacksMug { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("AttacksRunaway")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> AttacksRunaway { get; private set; }
-        
+        private List<Contribution> AttacksRunaway { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("AttacksWon")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> AttacksWon { get; private set; }
-        
-        [JsonProperty("BestChain")]
-        [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> BestChain { get; private set; }
+        private List<Contribution> AttacksWon { get { return Contributors; } set { Contributors = value; } }
         
         [JsonProperty("Busts")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> Busts { get; private set; }
-        
+        private List<Contribution> Busts { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("CandyUsed")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> CandyUsed { get; private set; }
-        
+        private List<Contribution> CandyUsed { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("CaymanInterest")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> CaymanInterest { get; private set; }
-        
+        private List<Contribution> CaymanInterest { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("CriminalOffences")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> CriminalOffences { get; private set; }
-        
+        private List<Contribution> CriminalOffences { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("DrugOverdoses")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> DrugOverdoses { get; private set; }
-        
+        private List<Contribution> DrugOverdoses { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("DrugsUsed")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> DrugsUsed { get; private set; }
-        
+        private List<Contribution> DrugsUsed { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("EnergyDrinkUsed")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> EnergyDrinkUsed { get; private set; }
-        
+        private List<Contribution> EnergyDrinkUsed { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("GymDefense")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> GymDefense { get; private set; }
-        
+        private List<Contribution> GymDefense { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("GymDexterity")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> GymDexterity { get; private set; }
-        
+        private List<Contribution> GymDexterity { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("GymSpeed")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> GymSpeed { get; private set; }
-        
+        private List<Contribution> GymSpeed { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("GymStrength")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> GymStrength { get; private set; }
-        
+        private List<Contribution> GymStrength { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("GymTrains")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> GymTrains { get; private set; }
-        
+        private List<Contribution> GymTrains { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("Hosps")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> Hosps { get; private set; }
+        private List<Contribution> Hosps { get { return Contributors; } set { Contributors = value; } }
         
         [JsonProperty("HospTimeGiven")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> HospTimeGiven { get; private set; }
-        
+        private List<Contribution> HospTimeGiven { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("HospTimeReceived")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> HospTimeReceived { get; private set; }
-        
+        private List<Contribution> HospTimeReceived { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("Hunting")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> Hunting { get; private set; }
-        
+        private List<Contribution> Hunting { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("Jails")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> Jails { get; private set; }
-        
+        private List<Contribution> Jails { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("MedicalCooldownUsed")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> MedicalCooldownUsed { get; private set; }
-        
+        private List<Contribution> MedicalCooldownUsed { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("MedicalItemRecovery")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> MedicalItemRecovery { get; private set; }
-        
+        private List<Contribution> MedicalItemRecovery { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("MedicalItemsUsed")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> MedicalItemsUsed { get; private set; }
-        
+        private List<Contribution> MedicalItemsUsed { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("OrganisedCrimeFail")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> OrganisedCrimeFail { get; private set; }
-        
+        private List<Contribution> OrganisedCrimeFail { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("OrganisedCrimeMoney")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> OrganisedCrimeMoney { get; private set; }
-        
+        private List<Contribution> OrganisedCrimeMoney { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("OrganisedCrimeRespect")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> OrganisedCrimeRespect { get; private set; }
-        
+        private List<Contribution> OrganisedCrimeRespect { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("OrganisedCrimeSuccess")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> OrganisedCrimeSuccess { get; private set; }
-        
+        private List<Contribution> OrganisedCrimeSuccess { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("Rehabs")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> Rehabs { get; private set; }
-        
+        private List<Contribution> Rehabs { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("Revives")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> Revives { get; private set; }
-        
+        private List<Contribution> Revives { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("TerritoryRespect")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> TerritoryRespect { get; private set; }
-        
+        private List<Contribution> TerritoryRespect { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("TravelTime")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> TravelTime { get; private set; }
-        
+        private List<Contribution> TravelTime { get { return Contributors; } set { Contributors = value; } }
+
         [JsonProperty("TravelTimes")]
         [JsonConverter(typeof(TornListConverter<Contribution>))]
-        public List<Contribution> TravelTimes { get; private set; }
+        private List<Contribution> TravelTimes { get { return Contributors; } set { Contributors = value; } }
     }
 }
