@@ -25,6 +25,8 @@ namespace TornJson.FactionData
     {
         [JsonProperty("name")] public string Name { get; set; }
 
+        [JsonProperty("level")] public byte Level { get; set; }
+
         [JsonProperty("days_in_faction")] public int DaysInFaction { get; set; }
 
         [JsonProperty("last_action")] public LastAction LastAction { get; set; }
