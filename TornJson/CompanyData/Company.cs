@@ -34,13 +34,13 @@ namespace TornJson.CompanyData
         ///     The type of company
         /// </summary>
         [JsonProperty("company_type")]
-        public int CompanyType { get; set; }
+        public byte CompanyType { get; set; }
 
         /// <summary>
         ///     The star rating out of 10 for the company
         /// </summary>
         [JsonProperty("rating")]
-        public int Rating { get; set; }
+        public byte Rating { get; set; }
 
         /// <summary>
         ///     The name of the company
@@ -53,6 +53,18 @@ namespace TornJson.CompanyData
         /// </summary>
         [JsonProperty("director")]
         public int Director { get; set; }
+
+        /// <summary>
+        ///     The number of employees in the company
+        /// </summary>
+        [JsonProperty("employees_hired")]
+        public byte EmployeesHired { get; set; }
+
+        /// <summary>
+        ///     The number of employees capable of being in the company
+        /// </summary>
+        [JsonProperty("employees_capacity")]
+        public byte EmployeesCapacity { get; set; }
 
         /// <summary>
         ///     The daily profit the company earns
