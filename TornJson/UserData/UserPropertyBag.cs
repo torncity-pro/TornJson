@@ -221,5 +221,9 @@ namespace TornJson.UserData
         [JsonProperty("discord")] public Discord Discord { get; set; }
 
         [JsonProperty("weaponexp")] public List<WeaponExp> WeaponExp { get; private set; }
+
+        [JsonProperty("log")]
+        [JsonConverter(typeof(TornListConverter<ActivityLog>))]
+        public List<ActivityLog> ActivityLog { get; private set; }
     }
 }
