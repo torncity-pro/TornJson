@@ -90,6 +90,7 @@ namespace TornJson.Exceptions
                 8 => true,
                 9 => true,
                 12 => true,
+                14 => true,
                 _ => false
             };
         }
@@ -123,6 +124,8 @@ namespace TornJson.Exceptions
                 12 => new ApiKeyReadException(ex),
                 13 => new ApiKeyDisabledException(ex),
                 14 => new DailyReadLimitReachedException(ex),
+                15 => new TemporaryErrorException(ex),
+                16 => new AccessLevelException(ex),
                 _ => new UnknownException(ex)
             };
         }

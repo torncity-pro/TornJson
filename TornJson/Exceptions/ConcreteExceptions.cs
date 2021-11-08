@@ -443,4 +443,60 @@ namespace TornJson.Exceptions
             throw new NotImplementedException();
         }
     }
+
+    /// <summary>
+    ///     Represents error code 15
+    /// </summary>
+    [Serializable]
+    public class TemporaryErrorException : ApiException
+    {
+        public TemporaryErrorException(TornExceptionInfo ex) : base(ex)
+        {
+        }
+
+        public TemporaryErrorException()
+        {
+        }
+
+        public TemporaryErrorException(string message) : base(message)
+        {
+        }
+
+        public TemporaryErrorException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+
+        protected TemporaryErrorException(SerializationInfo serializationInfo, StreamingContext streamingContext)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    /// <summary>
+    ///     Represents error code 16
+    /// </summary>
+    [Serializable]
+    public class AccessLevelException : ApiException
+    {
+        public AccessLevelException(TornExceptionInfo ex) : base(ex)
+        {
+        }
+
+        public AccessLevelException()
+        {
+        }
+
+        public AccessLevelException(string message) : base(message)
+        {
+        }
+
+        public AccessLevelException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+
+        protected AccessLevelException(SerializationInfo serializationInfo, StreamingContext streamingContext)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
