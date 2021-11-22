@@ -57,7 +57,7 @@ namespace TornJson.CommonData
     {
         [JsonProperty("shares")] public int Shares { get; set; }
 
-        [JsonProperty("bought_price")] public int BoughtPrice { get; set; }
+        [JsonProperty("bought_price")] public float BoughtPrice { get; set; }
 
         [JsonProperty("time_bought")] public long TimestampBought { get; set; }
     }
