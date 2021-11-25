@@ -35,6 +35,8 @@ namespace TornJson.CommonData
 
         [JsonProperty("total_shares")] public long TotalShares { get; set; }
 
+        [JsonProperty("divident")] public Dividend Dividend { get; set; }
+
         [JsonProperty("benefit")] public BenefitBlock Benefit { get; set; }
 
         [JsonProperty("history")] public List<History> History { get; private set; }
@@ -95,5 +97,20 @@ namespace TornJson.CommonData
         [JsonProperty("requirement")] public int Requirement { get; set; }
 
         [JsonProperty("description")] public string Description { get; set; }
+    }
+
+    public class Dividend
+    {
+        [JsonProperty("ready")]
+        public bool Ready { get; set; }
+
+        [JsonProperty("increment")]
+        public byte Increment { get; set; }
+
+        [JsonProperty("progress")]
+        public byte Progress { get; set; }
+
+        [JsonProperty("frequency")]
+        public byte Frequency { get; set; }
     }
 }
