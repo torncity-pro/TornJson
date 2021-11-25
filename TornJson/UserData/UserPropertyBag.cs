@@ -38,15 +38,15 @@ namespace TornJson.UserData
 
         [JsonProperty("status")] public Status Status { get; set; }
 
-        [JsonProperty("strength")] public string Strength { get; set; }
+        [JsonProperty("strength")] public long Strength { get; set; }
 
-        [JsonProperty("speed")] public string Speed { get; set; }
+        [JsonProperty("speed")] public long Speed { get; set; }
 
-        [JsonProperty("dexterity")] public string Dexterity { get; set; }
+        [JsonProperty("dexterity")] public long Dexterity { get; set; }
 
-        [JsonProperty("defense")] public string Defense { get; set; }
+        [JsonProperty("defense")] public long Defense { get; set; }
 
-        [JsonProperty("total")] public string Total { get; set; }
+        [JsonProperty("total")] public long Total { get; set; }
 
         [JsonProperty("strength_modifier")] public int StrengthModifier { get; set; }
 
