@@ -24,7 +24,7 @@ namespace TornJson.UserData
     {
         [JsonProperty("value")] public long Value { get; set; }
 
-        [JsonProperty("rank")] public long Rank { get; set; }
+        [JsonProperty("rank")] public int Rank { get; set; }
     }
 
     public class HallOfFame
