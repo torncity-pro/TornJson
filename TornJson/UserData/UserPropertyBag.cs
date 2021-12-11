@@ -227,5 +227,14 @@ namespace TornJson.UserData
         [JsonProperty("log")]
         [JsonConverter(typeof(TornListConverter<ActivityLog>))]
         public List<ActivityLog> ActivityLog { get; private set; }
+
+        [JsonProperty("reviving")]
+        public float ReviveSkill { get; set; }
+
+        [JsonProperty("racing")]
+        public float RacingSkill { get; set; }
+
+        [JsonProperty("hunting")]
+        public float HuntingSkill { get; set; }
     }
 }

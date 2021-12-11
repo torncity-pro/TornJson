@@ -41,7 +41,7 @@ namespace TornJson.UserData
         [JsonProperty("awards")] public int Awards { get; set; }
         [JsonProperty("axehits")] public int AxeHits { get; set; }
         [JsonProperty("bazaarcustomers")] public int BazaarCustomers { get; set; } // Private
-        [JsonProperty("bazaarprofit")] public int BazaarProfit { get; set; } // Private
+        [JsonProperty("bazaarprofit")] public long BazaarProfit { get; set; } // Private
         [JsonProperty("bazaarsales")] public int BazaarSales { get; set; } // Private
         [JsonProperty("bestactivestreak")] public int BestActivityStreak { get; set; }
         [JsonProperty("bestdamage")] public int BestDamage { get; set; }
