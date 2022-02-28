@@ -96,6 +96,27 @@ namespace TornJson.Exceptions
         }
     }
     
+    public enum TornErrorCode
+    {
+        Unknown = 0,
+        EmptyKey = 1,
+        IncorrectKey = 2,
+        WrongType = 3,
+        WrongField = 4,
+        TooManyRequests = 5,
+        IncorrectId = 6,
+        IncorrectIdEntityRelation = 7,
+        IpBlock = 8,
+        ApiDisabled = 9,
+        PlayerBanned = 10,
+        KeyChangeError = 11,
+        KeyReadError = 12,
+        PlayerInactive = 13,
+        DailyReadLimit = 14,
+        TemporaryError = 15,
+        AccessLevel = 16
+    }
+
     public static class ApiExceptionExtensions
     {
     
