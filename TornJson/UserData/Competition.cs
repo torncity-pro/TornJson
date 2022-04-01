@@ -24,12 +24,12 @@ namespace TornJson.UserData
     {
         [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("score")] public short Score { get; set; }
+        [JsonProperty("score")] public short? Score { get; set; }
 
         [JsonProperty("team")] public string Team { get; set; }
 
         [JsonProperty("teamName")] public string TeamName { get; set; }
 
-        [JsonProperty("attacks")] public short Attacks { get; set; }
+        [JsonProperty("attacks")] public short? Attacks { get; set; }
     }
 }
